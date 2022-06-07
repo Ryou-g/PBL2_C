@@ -2,9 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>hello</title>
+    <title>ホーム画面</title>
   </head>
   <body>
-  Hello,world!!
+
   </body>
 </html>
