@@ -10,7 +10,7 @@
   <img src="./images/background.jpeg" class="background_1">
   <img src="./images/woman.png" class="background_2">
 
-  <p class="fadeup">START</p>
+  <p class="fadeup">start</p>
   
   </div>
   </body>
