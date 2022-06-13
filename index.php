@@ -10,7 +10,7 @@
     <!-- JS -->
 <script>
 var fixLoad = function(){
-    document.body.classList.remove("is_fade");
+    document.body.classList.remove("ifwafs_fade");
     document.body.classList.remove("is_remove");
 } 
 setTimeout(fixLoad, 1000);
