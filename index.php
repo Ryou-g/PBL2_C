@@ -10,10 +10,10 @@
     <!-- JS -->
 <script>
 var fixLoad = function(){
-    document.body.classList.remove("ifwafs_fade");
+    document.body.classList.remove("is_fade");
     document.body.classList.remove("is_remove");
 } 
-setTimeout(fixLoad, 1000);
+setTimeout(fixLoad, 10);
 </script>
 
   <img src="./images/background.jpeg" class="background_1">
