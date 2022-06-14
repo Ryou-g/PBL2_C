@@ -23,19 +23,8 @@ img.background_2{
     margin-left:700px;
     margin-top: -542px;
 }
-p{
-    position: absolute;
-    font-size: 900%;
-    bottom: 30px;
-    left:70px;
-    font-family:"Bookman Old Style";
-    color:rgb(102, 94, 94);
-    padding:0;
-    margin:0; 
-  }
-
-  
-  .fadeup {
+/*STARTボタン*/
+.fadeup {
     animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
   }
    
@@ -53,3 +42,34 @@ p{
     }
   }
   
+
+  .only-background {
+    position: absolute;
+    font-size: 800%;
+    bottom: 180px;
+    left:140px;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+    color:rgb(102, 94, 94);
+    padding:0;
+    margin: 1px; 
+    padding: 16px;
+    color: rgb(41, 20, 20);
+    transition: background 1s;
+    transition: all 0.5s 0s ease;
+
+    
+  }
+  
+  
+
+    .only-background:hover {
+    color:rgb(197, 181, 181);
+    }
+
+    a {
+        text-decoration:none; 
+    }
+   
+
+  /*STARTボタン end*/
