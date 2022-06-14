@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="./CSS/header.css">
     <header>
         <!-- ヘッダー -->
       <meta charset="UTF-8">
