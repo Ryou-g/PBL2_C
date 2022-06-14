@@ -1,0 +1,75 @@
+body{
+    margin:0px;
+    margin-bottom:0px;
+    padding:0%;
+    overflow: hidden;
+}
+
+img.background_1{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    position:relative;
+ 
+}
+
+img.background_2{
+    position:relative;
+    width: 45%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-left:700px;
+    margin-top: -542px;
+}
+/*STARTボタン*/
+.fadeup {
+    animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  }
+   
+  @keyframes fadeup {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .only-background {
+    position: absolute;
+    font-size: 800%;
+    bottom: 180px;
+    left:140px;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+    color:rgb(102, 94, 94);
+    padding:0;
+    margin: 1px; 
+    padding: 16px;
+    color: rgb(41, 20, 20);
+    transition: background 1s;
+    transition: all 0.5s 0s ease;
+
+    
+  }
+  
+  
+
+    .only-background:hover {
+    color:rgb(197, 181, 181);
+    }
+
+    a {
+        text-decoration:none; 
+    }
+   
+
+  /*STARTボタン end*/
