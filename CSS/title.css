@@ -1,0 +1,99 @@
+body{
+    margin:0px;
+    margin-bottom:0px;
+    padding:0%;
+    overflow: hidden;
+}
+
+img.background_1{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    position:relative;
+ 
+}
+
+img.background_2{
+    position:relative;
+    width: 45%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-left:50%;
+    margin-top: -45%;
+}
+/*STARTボタン*/
+.fadeup {
+    animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  }
+   
+  @keyframes fadeup {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .only-background {
+    position: absolute;
+    font-size: 800%;
+<<<<<<< .merge_file_a19288
+    bottom: 180px;
+    left:140px;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+=======
+    bottom: 200px;
+    left:36%;
+    font-family: 'Fredoka One', cursive;/*基本フォント*/
+    
+>>>>>>> .merge_file_a15404
+    color:rgb(102, 94, 94);
+    padding:0;
+    margin: 1px; 
+    padding: 16px;
+    color: rgb(41, 20, 20);
+    transition: background 1s;
+    transition: all 0.5s 0s ease;
+
+    
+  }
+  
+  
+
+    .only-background:hover {
+    color:rgb(197, 181, 181);
+    }
+
+    a {
+        text-decoration:none; 
+    }
+   
+
+  /*STARTボタン end*/
+<<<<<<< .merge_file_a19288
+=======
+
+  /*ロゴ*/
+  .rogo{
+    position:absolute;
+    width: 30%;
+    height: 20%;
+    /*vertical-align: bottom;*/
+    background-size: contain;
+    margin-left:40.5%;
+    margin-top:20%;
+    font-size :400%;
+    z-index:10000
+}
+  /*ロゴend*/
+>>>>>>> .merge_file_a15404
