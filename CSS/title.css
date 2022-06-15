@@ -20,8 +20,8 @@ img.background_2{
     height: auto;
     vertical-align: top;
     background-size: contain;
-    margin-left:700px;
-    margin-top: -542px;
+    margin-left:50%;
+    margin-top: -45%;
 }
 /*STARTボタン*/
 .fadeup {
@@ -46,10 +46,10 @@ img.background_2{
   .only-background {
     position: absolute;
     font-size: 800%;
-    bottom: 180px;
-    left:140px;
+    bottom: 200px;
+    left:36%;
+    font-family: 'Fredoka One', cursive;/*基本フォント*/
     
-    font-family: 'Noto Sans JP', sans-serif;
     color:rgb(102, 94, 94);
     padding:0;
     margin: 1px; 
@@ -73,3 +73,17 @@ img.background_2{
    
 
   /*STARTボタン end*/
+
+  /*ロゴ*/
+  .rogo{
+    position:absolute;
+    width: 30%;
+    height: 20%;
+    /*vertical-align: bottom;*/
+    background-size: contain;
+    margin-left:40.5%;
+    margin-top:20%;
+    font-size :400%;
+    z-index:10000
+}
+  /*ロゴend*/
