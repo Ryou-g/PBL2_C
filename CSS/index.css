@@ -9,7 +9,7 @@
     z-index: 999999;
 }
 .md_transition::before {
-
+  
     background: -webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
     background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
     background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0));
