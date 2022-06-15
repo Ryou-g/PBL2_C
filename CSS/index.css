@@ -1,3 +1,7 @@
+ add_index_page/#5
+.md_transition {
+
+
 
 body{
     margin:0px;
@@ -26,20 +30,27 @@ img.background_2{
 }
 .md_transition {
  .merge_file_a04172
+ master
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+ add_index_page/#5
+    transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s; 
+
  add_title_page/#2
  .merge_file_a17204
     transition: transform 1s cubic-bezier(.39, .575, .565, 1) 0.1s; 
 
     transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s; 
  master
+ master
     z-index: 999999;
 }
 .md_transition::before {
+
+ add_index_page/#5
 
 
     transition: transform 0.3s cubic-bezier(.39, .575, .565, 1) 0s; 
@@ -47,6 +58,7 @@ img.background_2{
 }
 .md_transition::before {
 .merge_file_a04172
+ master
     background: -webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
     background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
     background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0));
@@ -59,31 +71,44 @@ img.background_2{
     top: -100%;
 }
 body.is_remove .md_transition {
+ add_index_page/#5
+
  .merge_file_a17204
+ master
 
     -webkit-animation: maskCloseTransition .4s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
     animation: maskCloseTransition .1s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+
+ add_index_page/#5
 
 
     -webkit-animation: maskCloseTransition 0.1s cubic-bezier(.47, 0, .745, .715) 0.1s 1 forwards;
     animation: maskCloseTransition 0.2s cubic-bezier(.47, 0, .745, .715) 0.1s 1 forwards;
 .merge_file_a04172
+ master
 }
 body:not(.is_fade) .md_transition {
     transform: translateY(-200%);
 }
 @-webkit-keyframes maskCloseTransition {
+ add_index_page/#5
+
+
 .merge_file_a17204
 
 
  .merge_file_a04172
+ master
     0% { transform: translateY(200%); }
     to { transform: translate(0); }
 }
 @keyframes maskCloseTransition {
     0% { transform: translateY(200%); }
     to { transform: translate(0); }
+ add_index_page/#5
+
  .merge_file_a17204
+ master
 }
 body{
     margin:0px;
@@ -108,8 +133,13 @@ img.background_2{
     height: auto;
     vertical-align: top;
     background-size: contain;
+ add_index_page/#5
+    margin-left:50%;
+    margin-top: -45%;
+
     margin-left:700px;
     margin-top: -542px;
+ master
 }
 /** {
     margin: 0px;
@@ -119,8 +149,14 @@ div.header{
     position: fixed;
         top: 0px;
         width: 100%;
+ add_index_page/#5
+        height: 16%;
+        border:1px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.589);
+
         height: 13%;
         border:1px solid #ccc;
         background-color: rgba(255, 255, 255, 0.589);
  .merge_file_a04172
+ master
 }
