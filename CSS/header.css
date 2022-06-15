@@ -1,9 +1,11 @@
 .nitiji{
     float:right;
-    margin-right: 2%;
+    margin-right: 3%;
+    font-size: 200%;
 }
 .rogo{
-    font: size 100px;
+    margin-left: 3%;
+    font-size :200%;
 }
 .haikei{
     opacity: 0.3;
