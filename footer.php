@@ -28,8 +28,6 @@
                 <div class="indicator"></div>
             </ul>
         </div>
-add_index_page/#5
- master
         <script>
             const list = document.querySelectorAll('.list');
             function activeLink(){
@@ -40,8 +38,6 @@ add_index_page/#5
             list.forEach((item) =>
             item.addEventListener('click',activeLink))
         </script>
- add_index_page/#5
- master
         <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
         <script  nomodule  src = "https:// unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"> </script>
     </body>
