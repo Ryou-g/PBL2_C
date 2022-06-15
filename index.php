@@ -14,7 +14,7 @@ var fixLoad = function(){
     document.body.classList.remove("is_fade");
     document.body.classList.remove("is_remove");
 } 
-setTimeout(fixLoad, 10);
+setTimeout(fixLoad, 100);
 </script>
 
   <img src="./images/background.jpeg" class="background_1">
