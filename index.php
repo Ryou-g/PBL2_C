@@ -26,4 +26,7 @@ require_once 'header.php';
   <div class="md_transition"></div>
   
   </body>
+  <?php 
+require_once 'footer.php';
+?>
 </html>
