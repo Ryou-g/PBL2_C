@@ -46,9 +46,9 @@ img.background_2{
   .only-background {
     position: absolute;
     font-size: 800%;
-    bottom:25px;
-    left:35%;
-    font-family: 'Fredoka One', cursive;
+    bottom: 200px;
+    left:36%;
+    font-family: 'Fredoka One', cursive;/*基本フォント*/
     
     color:rgb(102, 94, 94);
     padding:0;
@@ -77,11 +77,11 @@ img.background_2{
   /*ロゴ*/
   .rogo{
     position:absolute;
-    width: 45%;
-    height: 35%;
+    width: 30%;
+    height: 20%;
     /*vertical-align: bottom;*/
     background-size: contain;
-    margin-left:39%;
+    margin-left:40.5%;
     margin-top:20%;
     font-size :400%;
     z-index:10000

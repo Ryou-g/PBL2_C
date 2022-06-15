@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <title>タイトル画面</title>
   </head>
-  <body >
-     
+  <body>
+    
 <div class="md_transition"></div>
   <div>  
   <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
