@@ -21,8 +21,8 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="./establishment.php">
-                        <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>
                     </a>
                 </li>
                 <div class="indicator"></div>

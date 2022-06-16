@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="header">
-  <?php 
+  <?php
 require_once 'header.php';
 ?>
 </div>
@@ -32,6 +32,9 @@ require_once 'header.php';
             </tr>
         </table>
     </div>
-   
+
 </body>
+<?php
+require_once 'footer.php';
+?>
 </html>
