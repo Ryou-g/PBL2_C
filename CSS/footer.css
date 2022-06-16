@@ -8,15 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #222327;
-}
-
 .navi
 {
     position: absolute;
@@ -80,7 +71,7 @@ body
     top: -50%;
     width: 70px;
     height: 70px;
-    background-color: rgb(171, 226, 245);
+    background-color: rgba(171, 226, 245, 0.7);
     border-radius: 50%;
     transition: 0.5s;
 }
