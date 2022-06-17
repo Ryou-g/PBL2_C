@@ -14,9 +14,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #222327;
 }
-
 .navi
 {
     position: absolute;
@@ -84,7 +82,6 @@ body
     border-radius: 50%;
     transition: 0.5s;
 }
-
 .navi ul li:nth-child(1).active ~ .indicator
 {
     transform: translateX(calc(155px * 0));
