@@ -49,8 +49,10 @@ require_once 'header.php';
                 <td class="moji"><a href="background_change.php">背景を変える</a></td>
             </tr>
         </table>
-    <?php 
-require_once 'footer.php';
-?>
+    <div class="footer">
+        <?php 
+            require_once 'footer.php';
+        ?>
+    </div>
 </body>
 </html>

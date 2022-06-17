@@ -19,7 +19,7 @@
                     <a href="#">
                         <span class="icon"><ion-icon name="person-circle-sharp"></ion-icon></span>
                     </a>
-                </li>               
+                </li>
                 <li class="list">
                     <a href="#">
                         <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>
