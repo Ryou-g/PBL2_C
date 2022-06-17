@@ -2,27 +2,43 @@
 .setting,td,tr{
     position:relative;
     width:100%;
-    height:70px;
+    
     z-index: 500;
 }
+.setting td{
+    border-bottom: 1px solid #bbb;
+}
+.setting td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+  }
+
 .setting{
-    margin-top: -50%;
+    margin-top: -49%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    background-color: rgb(255, 255, 255, 0.589);
+    border-collapse: collapse;
+    height:100%;
 }
+.setting tr {
+    border-bottom: 1px solid #bbb;
+  }
+
 .setting th,.setting td{
     padding: 10px 0;
   text-align: center;
 }
-.setting tr:nth-child(odd){
-    background-color: rgb(0, 0, 0, 0.589);
-}
-.setting tr:nth-child(even){
-    background-color: rgb(255, 255, 255, 0.589);
+/** テーブル内の文字 */
+.mojibox{
+    padding-left:20px;
 }
 .moji{
-    padding-left:20px;
+    text-decoration-line: none;
+    color: black;
 }
 /** ヘッダーぐちゃぐちゃにならない用 */
 div.header{
@@ -30,7 +46,6 @@ div.header{
         top: 0px;
         width: 100%;
         height: 16%;
-        background-color: rgba(255, 255, 255, 0.589);
         z-index:1000;
 }
 div.footer{

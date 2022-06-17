@@ -31,22 +31,21 @@ setTimeout(fixLoad, 100);
 require_once 'header.php';
 ?>
 </div>
-  <div class="md_transition"></div>
         <table class="setting">
             <tr>
-                <td class="moji"><a href="my_page.php">マイページ</a></td>
+                <td class="mojibox"><a href="my_page.php" class="moji">マイページ</a></td>
             </tr>
             <tr>
-                <td class="moji"><a href="sound.php">サウンド</a></td>
+                <td class="mojibox"><a href="sound.php" class="moji">サウンド</a></td>
             </tr>
             <tr>
-                <td class="moji"><a href="bathing_log.php">入浴ログ</a></td>
+                <td class="mojibox"><a href="bathing_log.php" class="moji">入浴ログ</a></td>
             </tr>
             <tr>
-                <td class="moji"><a href="dress_up.php">着せ替え</a></td>
+                <td class="mojibox"><a href="dress_up.php" class="moji">着せ替え</a></td>
             </tr>
             <tr>
-                <td class="moji"><a href="background_change.php">背景を変える</a></td>
+                <td class="mojibox"><a href="background_change.php" class="moji">背景を変える</a></td>
             </tr>
         </table>
     <div class="footer">
