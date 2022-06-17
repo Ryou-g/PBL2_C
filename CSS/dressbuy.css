@@ -1,15 +1,15 @@
 .md_transition {
-  
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s; 
+    transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s; 
     z-index: 999999;
 }
 .md_transition::before {
-  
+
     background: -webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
     background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
     background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0));
@@ -58,22 +58,59 @@ img.background_1{
 
 img.background_2{
     position:relative;
-    width: 45%;
+    width: 35%;
     height: auto;
     vertical-align: top;
     background-size: contain;
-    margin-left:50%;
-    margin-top: -45%;
+    margin-top: -55%;
 }
-/** {
-    margin: 0px;
-    padding: 0px;
-}*/
+
 div.header{
-    position: fixed;
+        position: fixed;
         top: 0px;
         width: 100%;
         height: 16%;
         border:1px solid #ccc;
-        background-color: rgba(255, 255, 255, 0.589);
+        background-color: rgba(255, 255, 255, 0.61);
 }
+div.footer{
+    
+    z-index: 100000;
+}
+
+/*購入ボタン*/
+div.button001 a{
+    text-decoration: none;
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -18%;
+    margin-left:8%;
+    max-width: 280px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    font-family:'Fredoka One', cursive; 
+}
+div.button001 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+div.button001 a:after {
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+div.button001 a:hover:after {
+    border-color: #FFF;
+}
+/*購入ボタンend*/
