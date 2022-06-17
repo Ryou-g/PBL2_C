@@ -46,17 +46,10 @@ img.background_2{
   .only-background {
     position: absolute;
     font-size: 800%;
-<<<<<<< .merge_file_a19288
-    bottom: 180px;
-    left:140px;
-    
-    font-family: 'Noto Sans JP', sans-serif;
-=======
     bottom: 200px;
     left:36%;
     font-family: 'Fredoka One', cursive;/*基本フォント*/
-    
->>>>>>> .merge_file_a15404
+   
     color:rgb(102, 94, 94);
     padding:0;
     margin: 1px; 
@@ -80,8 +73,6 @@ img.background_2{
    
 
   /*STARTボタン end*/
-<<<<<<< .merge_file_a19288
-=======
 
   /*ロゴ*/
   .rogo{
@@ -95,5 +86,5 @@ img.background_2{
     font-size :400%;
     z-index:10000
 }
+
   /*ロゴend*/
->>>>>>> .merge_file_a15404
