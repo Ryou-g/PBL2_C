@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
+ <!DOCTYPE html>
+ <html lang="ja">
+ <head>
     <meta charset="UTF-8">
-    <link href="CSS/bathing_log.css" rel="stylsheet">
+    <link rel="stylesheet" href="CSS/bathing_log.css">
     <title>log</title>
 </head>
 <body>
