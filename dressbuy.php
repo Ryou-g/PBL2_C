@@ -21,14 +21,16 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-	<a href="#">購入する</a>
+<form action="dressbuy_finish.php" method="post">
+	<button type="submit" name="push">購入する</button>
+</form>
 </div>
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"><p>￥120</p></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png"  class="background_3"><p>￥120</p></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"><p>￥120</p></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"><p>￥120</p></div>
+    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"><p class="price">￥120</p></div>
     
 </div>
 <script>
