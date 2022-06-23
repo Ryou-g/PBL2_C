@@ -21,9 +21,9 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-<form action="dressbuy_finish.php" method="post">
-	<button type="submit" name="push">購入する</button>
-</form>
+
+	<a href="dressbuy_finish.php">購入する</a>
+
 </div>
 
 <div class="container">

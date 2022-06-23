@@ -45,7 +45,7 @@ div.footer{
 }
 
 /*購入ボタン*/
-div.button001 a{
+.button001 a{
     text-decoration: none;
     background: rgba(137, 236, 56, 0.849);
     border-color: black;
@@ -64,13 +64,13 @@ div.button001 a{
     font-weight: 1000;
     font-family:'Fredoka One', cursive; 
 }
-div.button001 a:hover {
+.button001 a:hover {
     background: #ffffff;
     color: rgb(0, 0, 0);
     border-color: black;
     border-width: 23px;
 }
-div.button001 a:after {
+.button001 a:after {
     border-top: 3px solid #313131;
     border-right: 3px solid #313131;
     transform: rotate(45deg) translateY(-50%);
@@ -80,7 +80,7 @@ div.button001 a:after {
     border-radius: 1px;
     transition: 0.3s ease-in-out;
 }
-div.button001 a:hover:after {
+.button001 a:hover:after {
     border-color: rgba(31, 30, 30, 0.555);
 }
 /*購入ボタンend*/
