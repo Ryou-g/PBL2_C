@@ -11,7 +11,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="dressbuy.php">
                         <span class="icon"><ion-icon name="storefront"></ion-icon></span>
                     </a>
                 </li>
@@ -38,7 +38,7 @@
             list.forEach((item) =>
             item.addEventListener('click',activeLink))
         </script>
-        <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+        <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
         <script  nomodule  src = "https:// unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"> </script>
     </body>
 </html>
