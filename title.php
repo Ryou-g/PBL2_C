@@ -9,21 +9,21 @@
     <title>タイトル画面</title>
   </head>
   <body>
-    
+
 <div class="md_transition"></div>
   <div>  
   <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
   <img src="./images/background.jpeg" class="background_1">
   <!--<img src="./images/woman.png" class="background_2">--->
 
-  
+    
   <div  class="fadeup">
   
       <a div class="only-background" href="index.php">START</div></a>
         
   </div>
   
-  
+
   </div>
   </body>
 </html>

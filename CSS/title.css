@@ -49,7 +49,7 @@ img.background_2{
     bottom: 200px;
     left:36%;
     font-family: 'Fredoka One', cursive;/*基本フォント*/
-    
+   
     color:rgb(102, 94, 94);
     padding:0;
     margin: 1px; 
@@ -86,4 +86,5 @@ img.background_2{
     font-size :400%;
     z-index:10000;
 }
+
   /*ロゴend*/

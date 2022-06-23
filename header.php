@@ -8,7 +8,6 @@
       <div class="kuuhaku">
         <nobr class="rogo">おふろっち</nobr> <!-- ここは後々画像になります -->
           <strong class="nitiji"><?php echo date('Y') ?>/<?php echo date('m') ?>/<?php echo date('d') ?></strong>
-        </div>
-           
-      
-    </header>
+       </div>
+
+     </header>
