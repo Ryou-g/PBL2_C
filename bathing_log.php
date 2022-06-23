@@ -5,6 +5,15 @@
     <link rel="stylesheet" href="CSS/bathing_log.css">
     <title>log</title>
 </head>
+
+<img src="./images/background.jpeg" class="background_1">
+<img src="./images/woman.png" class="background_2">
+
+<div class="header">
+<?php
+require_once 'header.php';
+?>
+</div>
 <body>
     <div class="log">
     <h4>2022/06/01</h4>
@@ -19,4 +28,9 @@
       <br>
     </div>
 </body>
+<div class="footer">
+<?php
+require_once 'footer.php';
+?>
+</div>
 </html>

@@ -6,13 +6,13 @@
   </head>
   <link rel="stylesheet" href="./CSS/index.css">
   <body class="is_fade" >
-    
+
     <!-- JS -->
 <script>
 var fixLoad = function(){
     document.body.classList.remove("is_fade");
     document.body.classList.remove("is_remove");
-} 
+}
 setTimeout(fixLoad, 100);
 </script>
 
@@ -24,10 +24,11 @@ require_once 'header.php';
 ?>
 </div>
   <div class="md_transition"></div>
-  
+
   </body>
+  <div class="footer">
   <?php
 require_once 'footer.php';
 ?>
+</div>
 </html>
-
