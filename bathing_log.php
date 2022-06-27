@@ -12,7 +12,7 @@
 <div class="header">
 <?php
 require_once 'header.php';
-require_once __DIR__ . './bathing_log_db.php';
+require_once __DIR__ . '/bathing_log_db.php';
   ?>
 </div>
 <body>

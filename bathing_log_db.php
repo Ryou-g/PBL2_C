@@ -1,12 +1,11 @@
 <?php
 
-require_once __DIR__ . './DBconnect.php';
+require_once __DIR__ . '/DBConnect.php';
 
-$sql = "select * from bathing_log";
+$sql = "select * from Bathing_log limit 10";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $logs = $stmt->fetchall();
-
 
 ?>
 
