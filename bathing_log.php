@@ -12,14 +12,19 @@
 <div class="header">
 <?php
 require_once 'header.php';
-?>
+require_once __DIR__ . './bathing_log_db.php';
+  ?>
 </div>
 <body>
 <table class="setting">
+<?php
+foreach($logs as $log){
+  echo $log['date'];
+?>
             <tr>
-              <td class="mojibox"><class="moji">2022/06/01<br>お風呂に入りました　19:05</td>
-            </tr>
-            <tr>
+              <td class="mojibox"><class="moji"><?php echo $log['date'] ?><br>お風呂に入りました　19:05</td>
+            </tr> 
+            <!-- <tr>
               <td class="mojibox"><class="moji">お風呂から出ました　19:37</td>
             </tr>
             <tr>
@@ -30,8 +35,12 @@ require_once 'header.php';
             </tr>
             <tr>
               <td class="mojibox"><class="moji"></td>
-            </tr>
+            </tr> -->
+            <?php
+}
+?>
         </table>
+
 </body>
 <div class="footer">
 <?php
