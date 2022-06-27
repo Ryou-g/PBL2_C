@@ -8,15 +8,34 @@
    <title>my_page</title>
 </head>
 <body>
-   <div class="my_page">
-      <h3>ニックネーム</h3>
-      <p>ディエゴ</p>
-      <h3>メールアドレス</h3>
-      <p>abcd1234@gmail.com</p>
-      <h3>パスワード</h3>
-      <p>＊＊＊＊＊＊＊＊</p>
-      <br>
-      <h4>パスワード再設定</h4>
-   </div>
+<img src="./images/background.jpeg" class="background_1">
+<img src="./images/woman.png" class="background_2">
+<div class="header">
+<?php
+require_once "./header.php";
+?>
+</div>
+<table class="setting">
+            <tr>
+              <td class="mojibox"><class="moji">ニックネーム<br><br>ディエゴ</td>
+            </tr>
+            <tr>
+              <td class="mojibox"><class="moji">メールアドレス<br><br>abcd1234@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="mojibox"><class="moji">パスワード<br>＊＊＊＊＊＊＊＊＊＊</td>
+            </tr>
+            <tr>
+              <td class="mojibox"><class="moji"></td>
+            </tr>
+            <tr>
+              <td class="mojibox"><class="moji">マイページ編集</td>
+            </tr>
+        </table>
 </body>
+<div class="footer">
+  <?php
+require_once "./footer.php";
+?>
+</div>
 </html>

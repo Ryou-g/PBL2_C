@@ -5,17 +5,7 @@
     <title>ホーム画面</title>
   </head>
   <link rel="stylesheet" href="./CSS/sound.css">
-  <body class="is_fade" >
-
-    <!-- JS -->
-<script>
-var fixLoad = function(){
-    document.body.classList.remove("is_fade");
-    document.body.classList.remove("is_remove");
-}
-setTimeout(fixLoad, 100);
-</script>
-
+  <body>
   <img src="./images/background.jpeg" class="background_1">
   <img src="./images/woman.png" class="background_2">
   <div class="header">
@@ -23,7 +13,6 @@ setTimeout(fixLoad, 100);
 require_once "./header.php";
 ?>
 </div>
-  <div class="md_transition"></div>
 
   </body>
   <div class="footer">
