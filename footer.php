@@ -6,22 +6,22 @@
 <div class="navi">
     <ul>
         <li class="list ">
-            <a href="index.php">
+            <a href="./index.php">
                 <span class="icon"><ion-icon name="home-sharp"></ion-icon></span>
             </a>
         </li>
         <li class="list">
-            <a href="dressbuy.php">
+            <a href="./dressbuy.php">
                 <span class="icon"><ion-icon name="storefront"></ion-icon></span>
             </a>
         </li>
         <li class="list">
-            <a href="character.php">
+            <a href="./character.php">
                 <span class="icon"><ion-icon name="person-circle-sharp"></ion-icon></span>
             </a>
         </li>
         <li class="list">
-            <a href="establishment.php">
+            <a href="./establishment.php">
                 <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>
             </a>
         </li>
