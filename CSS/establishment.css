@@ -78,6 +78,7 @@ body:not(.is_fade) .md_transition {
     margin-bottom:10%;
 }
 .moji{
+    font-weight:bold;
     text-decoration-line: none;
     color: black;
 }
