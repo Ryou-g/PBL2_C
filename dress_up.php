@@ -21,37 +21,73 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-	<a href="dress_up_finish.php">着せ替える</a>
+	<a onclick="OnButtonClick();">着せ替える</a>
 </div>
 
-
-<div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
+<div class="container" >
+    <div class="grid-item"   onclick="changeImages1()"><p id="target">風呂メイド1</p>
+    <img src="./images/adult.png"  class="background_3"></div>
+    <div class="grid-item"  onclick="changeImages3()"><p>風呂メイド3</p>
+    <img src="./images/sick.png"  class="background_3"></div>
+    <div class="grid-item"   onclick="changeImages4()"><p>風呂メイド4</p>
+    <img src="./images/neautral.png"  class="background_3"></div>
+    <a rel="http://buhidoh.net/?s">
     
 </div>
 <script>
     var img;
+    var choice;
     function changeImages1(){
     img = document.getElementById("image");
     img.src = "./images/adult.png";
+    
+   
   }
 
-    function changeImages2(){
+   /* function changeImages2(){
     img = document.getElementById("image");
     img.src = "./images/sexy.png";
-  }
+    choice = 2;
+  }*/
 
     function changeImages3(){
     img = document.getElementById("image");
     img.src = "./images/sick.png";
+  
+    
   }
 
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/neautral.png";
+    
   }
+
+  function OnButtonClick() {
+   
+    if ( image = "background_3"){
+    target = document.getElementsById("target");
+    target.innerHTML = "風呂メイド3 セット中";
+    }
+    else if (choice = 2){
+      target = document.getElementsByClassName("background_3");
+    target.innerHTML = "セット中や";
+    }
+    else if(  img.src = "./images/sick.png"){
+      target = document.getElementsByClassName("background_3");
+    target.innerHTML = "セット中や";
+    }
+    else if(choice = 4){
+    target = document.getElementsByClassName("background_3");
+    target.innerHTML = "セット中や";
+    }
+
+    
+    
+   }
+
+   
+
 </script>
 
   </body>
