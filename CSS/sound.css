@@ -1,3 +1,45 @@
+/** テーブル関係 */
+.setting,td,tr{
+  position:relative;
+  width:100%;
+  height: 17vh;
+  z-index: 500;
+}
+.setting td{
+  border-bottom: 1px solid #bbb;
+}
+.setting td::before {
+  content: attr(data-label);
+  font-weight: bold;
+  position: absolute;
+  left: 10%;
+}
+
+.setting{
+  margin-top: -44%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: rgb(255, 255, 255, 0.589);
+  border-collapse: collapse;
+}
+.setting tr {
+  border-bottom: 1px solid #bbb;
+}
+
+.setting th,.setting td{
+  padding: 1% 0;
+text-align: center;
+}
+/** テーブル内の文字 */
+.mojibox{
+  padding-left:20%;
+  margin-bottom:10%;
+}
+.moji{
+  font-weight:bold;
+  text-decoration-line: none;
+  color: black;
+}
 /** ヘッダーぐちゃぐちゃにならない用 */
 div.header{
   position: fixed;
