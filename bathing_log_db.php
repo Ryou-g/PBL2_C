@@ -45,27 +45,6 @@ if($_SESSION['bathing_flag'] == 1){
 }else{
     $log_list += array($i=>array("date"=>$now_day,"status"=>"おふろに入りませんでした"));
 }
-// foreach($logs as $log){
-//   if($now_day == 0){
-//     $now_day = $log['date'];
-//   }
-// //   $now_day2 = $log['date'];
-// //   $now_day = substr($now_day, 1, 10);
-// //   $now_day2 = substr($now_day2, 1, 10);
-// //   $date = new DATETIME($now_day);
-// //   $date2 = new DATETIME($now_day2);
-// //   $diff = $date2->diff($date);
-//   if($log['status_number'] == 1 && $log['button_censor'] == 1){
-//     $bathing_flag = 1;
-//   }
-//     // if($diff->days >= 1){
-//     // #表示処理を入れる
-//     //     if($bathing_flag == 1){
-//     //     }else{
-//     //     }
-//     // }
-//     $now_day = $log['date'];
-// }
 
 ?>
 

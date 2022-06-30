@@ -24,21 +24,6 @@ foreach($log_list as $bathlog){
             <tr>
               <td class="mojibox"><class="moji"><?php echo $bathlog['date'] ?><br><?php echo $bathlog['status'] ?></td>
             </tr> 
-            <!-- <tr>
-              <td class="mojibox"><class="moji">お風呂から出ました　19:37</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/02<br>お風呂に入りませんでした　23:59</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/03</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji"></td>
-            </tr> -->
-      <!-- <tr>
-        <td class="mojibox"><class="moji"><?php echo $now_day ?><br>おふろに入りませんでした</td>
-      </tr> -->
 <?php
 }
 ?>
