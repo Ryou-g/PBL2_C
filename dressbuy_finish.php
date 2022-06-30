@@ -16,11 +16,13 @@
     <img id="image" src="./images/sexy.png" class=background_2>
   </div>
   <div class="header">
-  <?php 
+<?php 
 require_once 'header.php';
 ?>
 </div>
-<p>GET !</p>
+<div  class="fadeIn">
+  <a div class="only-background">GET !</div></a>        
+</div>
   </body>
   <?php 
 require_once 'footer.php';

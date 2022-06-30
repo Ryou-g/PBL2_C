@@ -11,7 +11,7 @@ img.background_1{
     vertical-align: top;
     background-size: contain;
     position:relative;
- 
+
 }
 
 img.background_2{
@@ -27,7 +27,7 @@ img.background_2{
 .fadeup {
     animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
   }
-   
+
   @keyframes fadeup {
     0% {
       transform: translateY(30px);
@@ -41,36 +41,36 @@ img.background_2{
       transform: translateY(0);
     }
   }
-  
+
 
   .only-background {
     position: absolute;
     font-size: 800%;
-    bottom: 200px;
+    bottom: 30vh;
     left:36%;
     font-family: 'Fredoka One', cursive;/*基本フォント*/
-    
+
     color:rgb(102, 94, 94);
     padding:0;
-    margin: 1px; 
-    padding: 16px;
+    margin: 0%;
+    padding: 1%;
     color: rgb(41, 20, 20);
     transition: background 1s;
     transition: all 0.5s 0s ease;
 
-    
+
   }
-  
-  
+
+
 
     .only-background:hover {
     color:rgb(197, 181, 181);
     }
 
     a {
-        text-decoration:none; 
+        text-decoration:none;
     }
-   
+
 
   /*STARTボタン end*/
 
@@ -86,4 +86,5 @@ img.background_2{
     font-size :400%;
     z-index:10000;
 }
+
   /*ロゴend*/
