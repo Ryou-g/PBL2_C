@@ -21,37 +21,80 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-	<a href="dress_up_finish.php">着せ替える</a>
+	<a onclick="OnButtonClick();">着せ替える</a>
 </div>
 
-
-<div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
+<div class="container" >
+    <div class="grid-item"   onclick="changeImages1()"><p id="target_1">風呂メイド1</p>
+    <img src="./images/adult.png"  class="background_3"></div>
+    <div class="grid-item"  onclick="changeImages3()"><p id="target_2">風呂メイド3</p>
+    <img src="./images/sick.png"  class="background_3"></div>
+    <div class="grid-item"   onclick="changeImages4()"><p id="target_3">風呂メイド4</p>
+    <img src="./images/neautral.png"  class="background_3"></div>
+    <a rel="http://buhidoh.net/?s">
     
 </div>
 <script>
+  /*  衣装切り替え*/ 
     var img;
+    
     function changeImages1(){
     img = document.getElementById("image");
     img.src = "./images/adult.png";
+    
+   
   }
 
-    function changeImages2(){
+   /* function changeImages2(){
     img = document.getElementById("image");
     img.src = "./images/sexy.png";
-  }
+    choice = 2;
+  }*/
 
     function changeImages3(){
     img = document.getElementById("image");
     img.src = "./images/sick.png";
+  
+    
   }
 
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/neautral.png";
+    
   }
+
+  /*  衣装切り替えend*/ 
+
+  /*衣装選択中の表示*/
+  
+
+
+  function OnButtonClick() {
+   
+    if ( image = "background_3"){
+      var target_1 = document.getElementById("target_1");
+      target_1.innerHTML = "風呂メイド1 セット中";
+    }
+    else if (image="background_3"){
+      var target_2 = document.getElementById("target_2");
+      target_2.innerHTML = "セット中";
+    }
+    else if(  image= "background_3"){
+      var target = document.getElementById("target_3");
+      target.innerHTML = "セット中";
+    }
+    else if(image="background_3"){
+      var target = document.getElementById("target_4");
+      target.innerHTML = "セット中";
+    }
+
+    
+    
+   }
+
+   /*衣装選択中の表示end*/
+
 </script>
 
   </body>
