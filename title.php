@@ -9,21 +9,25 @@
 <title>タイトル画面</title>
 </head>
 <body>
-
 <div class="md_transition"></div>
   <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
   <img src="./images/background.jpeg" class="background_1">
   <!--<img src="./images/woman.png" class="background_2">--->
 
+
   <div  class="fadeup">
-    <a href="index.php" class="only-background">START</a>
+    <!-- ボタンの設置 -->
+    <input type="button" value="START" class="only-background" onclick="ring(); location.href='./index.php'">
+    <!-- 音声ファイルの読み込み -->
+    <audio id="tts">
+      <source src= "./sound/decision43.mp3" type="audio/mp3">
+    </audio>
   </div>
-
-
-
-<script>
-
-</script>
-</div>
+  <script type="text/javascript">
+    function ring(){
+      document.getElementById("tts").load();
+      document.getElementById("tts").play();
+    }
+  </script>
 </body>
 </html>
