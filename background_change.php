@@ -11,9 +11,9 @@
   
   <body>
   
-<img src="./images/dressbuy_buckground.png" class="background_1">
+<img id ="image" src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
-    <img id="image" src="./images/background.jpeg" class=background_2>
+    <img id="target" src="./images/background.jpeg" class=background_2>
   </div>
   <div class="header">
   <?php 
@@ -22,7 +22,7 @@ require_once 'header.php';
 </div>
 <div class="button001">
 
-	<a href="dressbuy_finish.php">購入する</a>
+	<a onclick="OnButtonClick();">着せ替える</a>
 
 </div>
 
@@ -53,6 +53,30 @@ require_once 'header.php';
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/apart.jpg";
+  }
+
+
+  function OnButtonClick() {
+   
+   if ( image = "background_3"){
+     var target_1 = document.getElementById("target_1");
+     target_1.innerHTML = " セット中";
+   }
+   else if (image="background_3"){
+     var target_2 = document.getElementById("target_2");
+     target_2.innerHTML = "セット中";
+   }
+   else if(  image= "background_3"){
+     var target = document.getElementById("target_3");
+     target.innerHTML = "セット中";
+   }
+   else if(image="background_3"){
+     var target = document.getElementById("target_4");
+     target.innerHTML = "セット中";
+   }
+
+   
+   
   }
 </script>
 

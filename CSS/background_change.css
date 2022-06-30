@@ -65,6 +65,7 @@ a{
     align-items: center;
     margin-top:-2%;
     margin-left:40%;
+    margin-bottom:4%;
     max-width: 280px;
     padding: 10px 25px;
     color: #313131;
@@ -117,11 +118,11 @@ p{
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.61);
+    /*background-color: rgba(255, 255, 255, 0.61);*/
     width: 90%;
     text-align: center;
     border: 1px solid ;
-    border-color:rgb(124, 124, 121);
+    border-color:rgb(204, 204, 204);
     border-radius: 7px;
     margin-top: -1.5%;
     
