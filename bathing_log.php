@@ -2,7 +2,7 @@
  <html lang="ja">
  <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/bathing_log.css">
+    <link rel="stylesheet" href="./CSS/bathing_log.css">
     <title>log</title>
 </head>
 
@@ -13,7 +13,8 @@
 <?php
 require_once 'header.php';
 require_once __DIR__ . '/bathing_log_db.php';
-  ?>
+ ?>
+
 </div>
 <body>
 <table class="setting">
@@ -32,7 +33,7 @@ foreach($log_list as $bathlog){
 </body>
 <div class="footer">
 <?php
-require_once 'footer.php';
+require_once "./footer.php";
 ?>
 </div>
 </html>

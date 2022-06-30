@@ -1,3 +1,46 @@
+/* 画面遷移アニメーション */
+.md_transition {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s;
+    z-index: 999999;
+}
+.md_transition::before {
+
+    background: -webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
+    background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
+    background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0));
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    left: 0;
+    top: -100%;
+}
+body.is_remove .md_transition {
+
+    -webkit-animation: maskCloseTransition .4s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+    animation: maskCloseTransition .1s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+
+}
+body:not(.is_fade) .md_transition {
+    transform: translateY(-200%);
+}
+@-webkit-keyframes maskCloseTransition {
+
+    0% { transform: translateY(200%); }
+    to { transform: translate(0); }
+}
+@keyframes maskCloseTransition {
+    0% { transform: translateY(200%); }
+    to { transform: translate(0); }
+}
+
 body{
     margin:0px;
     margin-bottom:0px;
@@ -45,7 +88,7 @@ div.footer{
 }
 
 /*購入ボタン*/
-div.button001 a{
+.button001 a{
     text-decoration: none;
     background: rgba(137, 236, 56, 0.849);
     border-color: black;
@@ -55,7 +98,7 @@ div.button001 a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top:1%;
+    margin-top:0.1%;
     margin-left:8%;
     max-width: 280px;
     padding: 10px 25px;
@@ -64,13 +107,13 @@ div.button001 a{
     font-weight: 1000;
     font-family:'Fredoka One', cursive;
 }
-div.button001 a:hover {
+.button001 a:hover {
     background: #ffffff;
     color: rgb(0, 0, 0);
     border-color: black;
     border-width: 23px;
 }
-div.button001 a:after {
+.button001 a:after {
     border-top: 3px solid #313131;
     border-right: 3px solid #313131;
     transform: rotate(45deg) translateY(-50%);
@@ -80,7 +123,7 @@ div.button001 a:after {
     border-radius: 1px;
     transition: 0.3s ease-in-out;
 }
-div.button001 a:hover:after {
+.button001 a:hover:after {
     border-color: rgba(31, 30, 30, 0.555);
 }
 /*購入ボタンend*/
@@ -103,7 +146,7 @@ p{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80% 80%;
     gap: 20px;
-    margin-top:-38.5%;
+    margin-top:-37.5%;
     margin-right: 2%;
 
 }

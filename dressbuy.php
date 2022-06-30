@@ -9,7 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 
-  <body>
+  <body class="is_fade" >
+
+      <!-- JS -->
+<script>
+var fixLoad = function(){
+    document.body.classList.remove("is_fade");
+    document.body.classList.remove("is_remove");
+}
+setTimeout(fixLoad, 100);
+</script>
 
   <img src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
@@ -20,6 +29,8 @@
 require_once 'header.php';
 ?>
 </div>
+<div class="md_transition"></div>
+
 <div class="button001">
 
 	<a href="dressbuy_finish.php">購入する</a>
