@@ -18,11 +18,11 @@ require_once __DIR__ . '/bathing_log_db.php';
 <body>
 <table class="setting">
 <?php
-foreach($logs as $log){
-  echo $log['date'];
+foreach($log_list as $bathlog){
+
 ?>
             <tr>
-              <td class="mojibox"><class="moji"><?php echo $log['date'] ?><br>お風呂に入りました　19:05</td>
+              <td class="mojibox"><class="moji"><?php echo $bathlog['date'] ?><br><?php echo $bathlog['status'] ?></td>
             </tr> 
             <!-- <tr>
               <td class="mojibox"><class="moji">お風呂から出ました　19:37</td>
@@ -36,10 +36,13 @@ foreach($logs as $log){
             <tr>
               <td class="mojibox"><class="moji"></td>
             </tr> -->
-            <?php
+      <!-- <tr>
+        <td class="mojibox"><class="moji"><?php echo $now_day ?><br>おふろに入りませんでした</td>
+      </tr> -->
+<?php
 }
 ?>
-        </table>
+</table>
 
 </body>
 <div class="footer">
