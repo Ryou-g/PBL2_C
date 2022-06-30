@@ -11,27 +11,25 @@
 
 <div class="header">
 <?php
-require_once "./header.php";
-?>
+require_once 'header.php';
+require_once __DIR__ . '/bathing_log_db.php';
+ ?>
+
 </div>
 <body>
 <table class="setting">
+<?php
+foreach($log_list as $bathlog){
+
+?>
             <tr>
-              <td class="mojibox"><class="moji">2022/06/01<br>お風呂に入りました　19:05</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">お風呂から出ました　19:37</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/02<br>お風呂に入りませんでした　23:59</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/03</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji"></td>
-            </tr>
-        </table>
+              <td class="mojibox"><class="moji"><?php echo $bathlog['date'] ?><br><?php echo $bathlog['status'] ?></td>
+            </tr> 
+<?php
+}
+?>
+</table>
+
 </body>
 <div class="footer">
 <?php
