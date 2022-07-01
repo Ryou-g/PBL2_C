@@ -32,6 +32,20 @@ require_once "./header.php";
               <td class="mojibox"><class="moji">マイページ編集</td>
             </tr>
         </table>
+        
+        <div class="sns">
+        <ul class="ss">
+            <li class="s-icon"><a href="#">
+                <span class="icons1"><ion-icon name="logo-facebook"></ion-icon></span>
+            </a></li>
+            <li class="s-icon"><a href="#">
+                <span class="icons2"><ion-icon name="logo-twitter"></ion-icon></span>
+            </a></li>
+        </ul>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <div class="footer">
   <?php
