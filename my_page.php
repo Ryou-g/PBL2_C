@@ -9,14 +9,30 @@
 </head>
 <body>
    <div class="my_page">
-      <h3>ニックネーム</h3>
-      <p>ディエゴ</p>
-      <h3>メールアドレス</h3>
-      <p>abcd1234@gmail.com</p>
-      <h3>パスワード</h3>
-      <p>＊＊＊＊＊＊＊＊</p>
+      <ul clas="n">
+         <li class="i">ニックネーム</li>
+         <li class="t">ディエゴ</li>
+         <li class="i">メールアドレス</li>
+         <li class="t">abcd1234@gmail.com</li>
+         <li class="i">>パスワード</li>
+         <li class="t">＊＊＊＊＊＊＊＊</li>
+      </ul>
       <br>
       <h4>パスワード再設定</h4>
    </div>
+
+   <div class="sns">
+        <ul class="ss">
+            <li class="s-icon"><a href="#">
+                <span class="icons1"><ion-icon name="logo-facebook"></ion-icon></span>
+            </a></li>
+            <li class="s-icon"><a href="#">
+                <span class="icons2"><ion-icon name="logo-twitter"></ion-icon></span>
+            </a></li>
+        </ul>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

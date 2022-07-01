@@ -8,17 +8,19 @@
     height: 90%;
 }
 
-h3
+.i
 {
-    font-weight: lighter;
-    font-size: 95%;
-    padding-top: 5%;
-    margin: 0 auto -5% 5%;
+    list-style: none;
+    margin-top: 5%;
+    padding: auto;
     letter-spacing: 0.15em;
 }
 
-p
+.t
 {
+    list-style: none;
+    margin-bottom: 5%;
+    padding: auto;
     text-align: center;
 }
 
@@ -27,4 +29,51 @@ h4
     color:rgba(100, 100, 100, 0.9);
     text-align: right;
     margin-right: 10%;
+}
+
+.sns
+{
+    
+    margin: auto auto 10% 0;
+}
+
+.ss
+{
+    display: flex;
+}
+
+.s-icon
+{
+    list-style: none; 
+    margin-left: 0.5%;
+}
+
+.icons1
+{
+    margin-left: 0;
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(24, 119, 242);
+}
+
+.icons1:hover
+{
+    color: rgb(24, 119, 242);
+}
+
+.icons2
+{
+    margin-left: 0;
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1da1f2;
+}
+
+.icons2:hover
+{
+    color: #1da1f2;
 }
