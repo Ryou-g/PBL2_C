@@ -32,6 +32,7 @@ require_once "./header.php";
               <td class="mojibox"><class="moji">マイページ編集</td>
             </tr>
         </table>
+        
         <div class="sns">
         <ul class="ss">
             <li class="s-icon"><a href="#">
