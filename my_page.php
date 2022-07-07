@@ -30,10 +30,10 @@ require_once "./header.php";
             </tr>
             <tr>
               <td class="mojibox"><class="moji">マイページ編集</td>
-            </tr>
+            </tr>z
         </table>
-        
-        <div class="sns">
+
+        <div class="sns">z
         <ul class="ss">
             <li class="s-icon"><a href="#">
                 <span class="icons1"><ion-icon name="logo-facebook"></ion-icon></span>
