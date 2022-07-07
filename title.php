@@ -17,17 +17,7 @@
 
   <div  class="fadeup">
     <!-- ボタンの設置 -->
-    <input type="button" value="START" class="only-background" onclick="ring(); location.href='./index.php'">
-    <!-- 音声ファイルの読み込み -->
-    <audio id="tts">
-      <source src= "./sound/decision43.mp3" type="audio/mp3">
-    </audio>
-  </div>
-  <script type="text/javascript">
-    function ring(){
-      document.getElementById("tts").load();
-      document.getElementById("tts").play();
-    }
-  </script>
+    <a href="./index.php" class="only-background">START</a>
+
 </body>
 </html>
