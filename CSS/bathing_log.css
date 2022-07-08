@@ -1,0 +1,82 @@
+/** テーブル関係 */
+.setting,td,tr{
+    position:relative;
+    width:100%;
+    height: 7vh;
+    z-index: 500;
+}
+.setting td{
+    border-bottom: 1px solid #bbb;
+}
+.setting td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+  }
+
+.setting{
+    margin-top: -48%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: rgb(255, 255, 255, 0.589);
+    border-collapse: collapse;
+}
+.setting tr {
+    border-bottom: 1px solid #bbb;
+  }
+
+.setting th,.setting td{
+    padding: 1% 0;
+  text-align: center;
+}
+/** テーブル内の文字 */
+.mojibox{
+    padding-left:20%;
+    margin-bottom:10%;
+}
+.moji{
+    text-decoration-line: none;
+    color: black;
+}
+
+/** ヘッダーぐちゃぐちゃにならない用 */
+div.header{
+    position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 16%;
+        z-index:1000;
+        padding-bottom:10px;
+}
+div.footer{
+    position: relative;
+    z-index: 1000;
+}
+/** 背景 */
+body{
+    margin:0%;
+    margin-bottom:0%;
+    padding:0%;
+    overflow: hidden;
+}
+/** 背景 */
+img.background_1{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-top: 0%;
+    z-index: 1;
+}
+/**立ち絵*/
+img.background_2{
+    position:relative;
+    width: 45%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-left:50%;
+    margin-top: -45%;
+    z-index:    2;
+}

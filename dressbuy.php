@@ -13,6 +13,7 @@
 <?php
 session_start();
 ?>
+
       <!-- JS -->
 <script>
 var fixLoad = function(){
