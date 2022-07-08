@@ -9,11 +9,16 @@
 <title>タイトル画面</title>
 </head>
 <body>
+<?php
+
+require_once __DIR__ . '/sound_db.php';
+
+?>
+<p><?php echo $sound['sound_name'] ?></p>
 <div class="md_transition"></div>
   <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
   <img src="./images/background.jpeg" class="background_1">
   <!--<img src="./images/woman.png" class="background_2">--->
-
 
   <div  class="fadeup">
     <!-- ボタンの設置 -->
