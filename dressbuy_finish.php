@@ -45,7 +45,24 @@ require_once 'header.php';
 ?>
 </div>
 <div  class="fadeIn">
-  <a div class="only-background">GET !</div></a>        
+  <?php
+  if($buyflag == 1){
+  ?>
+  <a div class="only-background">購入エラー 残高を確認してください</div></a> 
+  <?php
+  }
+  else if($buyflag == 2){
+  ?>
+  <a div class="only-background">購入エラー 既に購入された衣装です</div></a> 
+  <?php
+  }
+  else{
+  ?>
+  <a div class="only-background">GET !!</div></a>
+  <?php
+  }
+  ?> 
+
 </div>
   </body>
   <?php 
