@@ -16,6 +16,10 @@ var fixLoad = function(){
 setTimeout(fixLoad, 100);
 </script>
 
+<?php
+require_once __DIR__ . '/character_db.php';
+?>
+
 <img src="./images/background.jpeg" class="background_1">
 <img src="./images/woman.png" class="background_2">
 <div class="header">
