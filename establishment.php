@@ -34,7 +34,7 @@ require_once 'header.php';
 <div class="md_transition"></div>
         <table class="setting">
             <tr>
-                <td class="mojibox"><a href="./my_page.php" class="moji">マイページ</a></td>
+                <td class="mojibox"><a href="./my_page.php" class="moji">名前変更</a></td>
             </tr>
             <tr>
                 <td class="mojibox"><a href="./sound.php" class="moji">サウンド</a></td>

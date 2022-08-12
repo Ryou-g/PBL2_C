@@ -15,34 +15,15 @@
 require_once "./header.php";
 ?>
 </div>
-<table class="setting">
-            <tr>
-              <td class="mojibox"><class="moji">ニックネーム<br><br>ディエゴ</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">メールアドレス<br><br>abcd1234@gmail.com</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">パスワード<br>＊＊＊＊＊＊＊＊＊＊</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji"></td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">マイページ編集</td>
-            </tr>z
-        </table>
-
-        <div class="sns">z
-        <ul class="ss">
-            <li class="s-icon"><a href="#">
-                <span class="icons1"><ion-icon name="logo-facebook"></ion-icon></span>
-            </a></li>
-            <li class="s-icon"><a href="#">
-                <span class="icons2"><ion-icon name="logo-twitter"></ion-icon></span>
-            </a></li>
-        </ul>
-    </div>
+<form action="receive.php" method="post">
+  <br>
+  <label for=""><span>名前</span>
+    <input type="text" name="name" id=""><br>
+  </label>
+  <br>
+  <input type="submit" value="送信">
+</form>
+</div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
