@@ -14,7 +14,6 @@
 require_once __DIR__ . '/sound_db.php';
 
 ?>
-<p><?php echo $sound['sound_name'] ?></p>
 <div class="md_transition"></div>
   <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
   <img src="./images/background.jpeg" class="background_1">

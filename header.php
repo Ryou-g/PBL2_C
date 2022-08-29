@@ -1,3 +1,15 @@
+<?php
+
+require_once __DIR__ . '/DBConnect.php';//DBへの接続
+
+$sql = "SELECT * FROM users WHERE id = id";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$name = $stmt->fetchAll();
+foreach($name as $val){
+
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
     <link rel="stylesheet" href="./CSS/header.css">
@@ -7,7 +19,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
       <div class="kuuhaku">
         <div class="flex">
-        <nobr class="rogo">ディエゴ</nobr>
+        <nobr class="rogo"><?php echo $val['user_name']; ?></nobr>
           <div class="fan-var_2">
             <div class="fan-box_2">
               <p>次の好感度まであと3回</p>

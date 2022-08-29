@@ -15,13 +15,13 @@
 require_once "./header.php";
 ?>
 </div>
-<form action="receive.php" method="post">
-  <br>
-  <label for=""><span>名前</span>
-    <input type="text" name="name" id=""><br>
-  </label>
-  <br>
-  <input type="submit" value="送信">
+<form action="name_change.php" method="post">
+<h2>名前を入力してください。</h2>
+  <textarea name="name" cols="40" rows="3" placeholder="変更する名前を入力" required></textarea><br>
+  <button type="submit" name="button">変更する</button>
+</form>
+
+</main>
 </form>
 </div>
 

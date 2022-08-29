@@ -1,0 +1,50 @@
+div.name_chenge{
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 160%;
+  font-weight: bold;
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+/** ヘッダーぐちゃぐちゃにならない用 */
+div.header{
+  position: fixed;
+      top: 0%;
+      width: 100%;
+      height: 16%;
+      z-index:1000;
+      padding-bottom:10px;
+}
+div.footer{
+  position:relative;
+  z-index: 1000;
+}
+/** 背景 */
+body{
+  margin:0%;
+  margin-bottom:0%;
+  padding:0%;
+  overflow: hidden;
+}
+/** 背景 */
+img.background_1{
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  background-size: contain;
+  margin-top: 0%;
+  z-index: 1;
+}
+/**立ち絵*/
+img.background_2{
+  position:relative;
+  width: 45%;
+  height: auto;
+  vertical-align: top;
+  background-size: contain;
+  margin-left:60%;
+  margin-top: -45%;
+  z-index:    2;
+}

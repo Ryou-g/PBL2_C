@@ -1,3 +1,15 @@
+<?php
+
+require_once __DIR__ . '/DBConnect.php';//DBへの接続
+
+$sql = "SELECT * FROM users WHERE id = id";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$name = $stmt->fetchAll();
+foreach($name as $val){
+
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -38,7 +50,7 @@ require_once __DIR__ . '/character_db.php';
 <!--好感度DBここまで-->
 <!--キャラクターDBここから-->
 <div class="moji-box">
-  <p>名前:紅　ディエゴ</p>
+  <p>名前:<?php echo $val['user_name']; ?></p>
   <br>
   <p>年齢:22歳</p>
   <br>
