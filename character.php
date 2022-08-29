@@ -38,6 +38,7 @@ require_once __DIR__ . '/character_db.php';
 <?php
   require_once 'header.php';
 ?>
+
 </div>
 <div class="md_transition"></div>
 <!--好感度DBここから-->
@@ -48,6 +49,11 @@ require_once __DIR__ . '/character_db.php';
   </div>
 </div>
 <!--好感度DBここまで-->
+<!--Twitter共有ボタンここから-->
+<a href="https://twitter.com/intent/tweet?url=http://localhost/PBL2/character.php&text=わたしのおふろっちはこんな感じです。" target="blank_">
+  Twiiterでシェアする
+</a>
+<!--Twitter共有ボタンここまで-->
 <!--キャラクターDBここから-->
 <div class="moji-box">
   <p>名前:<?php echo $val['user_name']; ?></p>
