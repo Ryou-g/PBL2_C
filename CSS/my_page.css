@@ -3,10 +3,50 @@ form{
   margin-left: 25%;
   top: 45%;
   width: 50%;
+  height: 30%;
   text-align: center;
-  background-color:lightgrey;
+  background-color: rgba(255, 255, 255, 1);
   z-index: 1500;
+  opacity: 0.9;
 }
+/*ボタン*/
+button{
+  text-decoration: none;
+  background: rgba(137, 236, 56, 0.849);
+  border-color: black;
+  border-width: 1px;
+  border-radius: 3px;
+  position:relative ;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:3%;
+  margin-left:-8%;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.1s ease-in-out;
+  font-weight: 1000;
+  font-family:'Fredoka One', cursive;
+}
+
+textarea{
+  font: 15px/24px sans-serif;
+  height: 2em;
+  width: 80%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea :hover{
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+
 /** ヘッダーぐちゃぐちゃにならない用 */
 div.header{
   position: fixed;
@@ -43,7 +83,7 @@ img.background_2{
   height: auto;
   vertical-align: top;
   background-size: contain;
-  margin-left:60%;
+  margin-left:50%;
   margin-top: -45%;
   z-index:    2;
 }
