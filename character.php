@@ -51,7 +51,7 @@ require_once __DIR__ . '/character_db.php';
 <!--好感度DBここまで-->
 <!--Twitter共有ボタンここから-->
 <a href="https://twitter.com/intent/tweet?url=http://localhost/PBL2/character.php&text=わたしのおふろっちはこんな感じです。" target="blank_">
-  Twiiterでシェアする
+  <img src="./icon/Twitter.png" class="icon">
 </a>
 <!--Twitter共有ボタンここまで-->
 <!--キャラクターDBここから-->
