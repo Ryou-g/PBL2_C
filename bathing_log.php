@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./CSS/bathing_log.css">
-    <title>log</title>
+    <title>入浴ログ</title>
 </head>
 
 <img src="./images/background.jpeg" class="background_1">
@@ -27,7 +27,7 @@ require_once 'header.php';
 <form method='POST' action='bathing_log.php'>
 <select name="month" class="cp_sl06" style="text-align:center;"  required>
 <option value="月を選択して下さい" hidden disabled selected></option>
-<option value="<?php echo $bathlog['date'],$bathlog['status'] ?>">全月</option>
+<option value="">全月</option>
 <option value="">1月</option>
 <option value="2">2月</option>
 <option value="3">3月</option>
@@ -51,18 +51,18 @@ require_once 'header.php';
 <table class="setting">
 <?php
 $month = $_POST["month"];
-$time1 = strtotime('2022-08-00');
+$target = date('2022-08-01');
 foreach($log_list as $bathlog){
-if ($month === "8") { ?>
-
+if ($month==='8') { ?>
   <tr>
-  <td class="mojibox"><class="moji"><?php echo $bathlog['date'],$bathlog['status'] ?></td>
+  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
   </tr>
   <?php
+  
 } else { 
   ?>
   <tr>
-  <td class="mojibox"><class="moji"><?php echo $bathlog['date'],$bathlog['status'] ?></td>
+  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
   </tr>
 <?php
   }

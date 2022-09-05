@@ -3,7 +3,7 @@
 require_once __DIR__ . '/DBConnect.php';
 
 session_start();
-$sql = "select * from Bathing_log ORDER BY id DESC;";
+$sql = "select * from Bathing_log WHERE date>='2022-08-01' ORDER BY id DESC;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $logs = $stmt->fetchall();
