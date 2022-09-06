@@ -68,9 +68,9 @@ if ($month==='8') {
 } else { 
   */
   ?>
-  <tr>
+  <!-- <tr>
   <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
-  </tr>
+  </tr> -->
 <?php
 /*
   }
