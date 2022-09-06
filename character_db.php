@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/DBConnect.php';
 
-$Favorability = 50;
+$Favorability = 0;
 
 session_start();
 $sql = "select * from Bathing_log ORDER BY id DESC;";
