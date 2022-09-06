@@ -3,8 +3,28 @@
 require_once __DIR__ . '/DBConnect.php';
 
 session_start();
-$sql = "select * from Bathing_log ORDER BY id DESC;";
-$stmt = $pdo->prepare($sql);
+date_default_timezone_set('Asia/Tokyo');
+
+
+if(!isset($_POST['month'])){
+    $sql = "select * from Bathing_log ORDER BY id DESC;";
+    $stmt = $pdo->prepare($sql);
+}elseif($_POST['month'] == "all"){
+    $sql = "select * from Bathing_log ORDER BY id DESC;";
+    $stmt = $pdo->prepare($sql);
+}else{
+    $tmp = $_POST['month'];
+    $start_date = '2022-' . $tmp . '-01';
+    $end_date = new DateTime($start_date);
+    $end_date -> modify("+1 month");        //ひと月足して範囲の終わりを設定
+    $end_date = $end_date->format(('Y-m-d'));
+
+    $sql = "select * from Bathing_log WHERE date BETWEEN :start_date and :end_date ORDER BY id DESC;";
+    $stmt = $pdo->prepare($sql);
+    $stmt -> bindValue(':start_date',$start_date);
+    $stmt -> bindValue(':end_date', $end_date);
+}
+
 $stmt->execute();
 $logs = $stmt->fetchall();
 
