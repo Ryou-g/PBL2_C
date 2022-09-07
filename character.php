@@ -46,8 +46,6 @@ require_once __DIR__ . '/character_db.php';
   <p>次の好感度まであと3回</p>
 
 
-
-
   <div style="background-color: #41A077; border-radius: 10px;">
     <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php $Favorability ?>%;"></div>
 
