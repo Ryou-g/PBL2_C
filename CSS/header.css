@@ -1,6 +1,10 @@
+.flex{
+    display: flex;
+}
 .nitiji{
-    float:right;
-    margin-right: 3%;
+    position: absolute;
+    margin-top:-3.5%;
+    margin-left: 80%;
     font-size: 200%;
 }
 .rogo{
@@ -10,7 +14,27 @@
 .haikei{
     opacity: 0.3;
 }
+
 .kuuhaku{
     padding-top:3%;
     padding-bottom:2%;
+    background-color: rgba(255, 255, 255, 0.589);
 }
+
+/* 好感度バー */
+div.fan-var_2 {
+    overflow: hidden;
+  }
+
+  div > div {
+    transform: translateX(calc(-90% + var(--w)));
+    width: 90%;
+  }
+  /* 好感度ボックス */
+  .fan-box_2{
+    margin-left: 0%;
+    margin-top: 0%;
+    text-align: center;
+    font-size: 10%;
+    font-weight: bold;
+  }
