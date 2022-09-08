@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/DBConnect.php';
 
-$Favorability = 50;
+$Favorability = 0;
 
 session_start();
 $sql = "select * from Bathing_log ORDER BY id DESC;";
@@ -48,10 +48,10 @@ if($_SESSION['bathing_flag'] == 1){
 }
 
 
-$sql = "UPDATE users set Favorability=:Favorability WHERE id = 1";
-$stmt = $pdo -> prepare($sql);
-$stmt -> bindValue(':Favorability', $Favorability);
-$stmt -> execute();
+$sql_1 = "UPDATE users set Favorability=:Favorability WHERE id = 1";
+$stmt_1 = $pdo -> prepare($sql_1);
+$stmt_1 -> bindValue(':Favorability', $Favorability);
+$stmt_1 -> execute();
 
 
 ?>
