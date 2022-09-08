@@ -49,7 +49,6 @@ require_once __DIR__ . '/character_db.php';
     <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
   </div>
   
-
 </div>
 <!--好感度DBここまで-->
 <!--Twitter共有ボタンここから-->

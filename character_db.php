@@ -48,6 +48,7 @@ if($_SESSION['bathing_flag'] == 1){
 }
 
 
+
 $sql = "UPDATE users set Favorability=:Favorability WHERE id = 1";
 $stmt = $pdo -> prepare($sql);
 $stmt -> bindValue(':Favorability', $Favorability);
