@@ -21,7 +21,10 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-	<a href="dress_up_finish.php">着せ替える</a>
+<form method="POST" name="form1" action="dress_up_db.php">
+  <input type="hidden" name="example" id="example">
+	<a href="javascript:form1.submit()">着せ替える</a>
+</form>
 </div>
 
 
@@ -33,24 +36,30 @@ require_once 'header.php';
 </div>
 <script>
     var img;
+    const hiddenField = document.getElementById('example');
     function changeImages1(){
     img = document.getElementById("image");
     img.src = "./images/adult.png";
+    // 値をセット
+    hiddenField.value = "./images/adult.png";
   }
 
     function changeImages2(){
     img = document.getElementById("image");
     img.src = "./images/sexy.png";
+    hiddenField.value = "./images/sexy.png";
   }
 
     function changeImages3(){
     img = document.getElementById("image");
     img.src = "./images/sick.png";
+    hiddenField.value = "./images/sick.png";
   }
 
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/neautral.png";
+    hiddenField.value = "./images/neautral.png";
   }
 </script>
 
