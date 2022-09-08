@@ -20,7 +20,7 @@ foreach($name as $val){
 <body class="is_fade" >
 
     <!-- JS -->
-<script>
+    <script>
 var fixLoad = function(){
     document.body.classList.remove("is_fade");
     document.body.classList.remove("is_remove");
@@ -69,10 +69,10 @@ require_once __DIR__ . '/character_db.php';
   <p>現在のお風呂：露天風呂</p>
 </div>
 <!--キャラクターDBここまで-->
-</body>
 <div class="footer">
 <?php
   require_once 'footer.php';
 ?>
 </div>
+</body>
 </html>
