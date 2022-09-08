@@ -9,6 +9,8 @@ $name = $stmt->fetchAll();
 foreach($name as $val){
 
 }
+
+require_once __DIR__ . '/character_db.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -22,9 +24,9 @@ foreach($name as $val){
         <nobr class="rogo"><?php echo $val['user_name']; ?></nobr>
           <div class="fan-var_2">
             <div class="fan-box_2">
-              <p>次の好感度まであと3回</p>
+              
               <div style="background-color: #41A077; border-radius: 10px;">
-                <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:36%;"></div>
+                <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
               </div>
             </div>
           </div>

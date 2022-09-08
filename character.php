@@ -43,9 +43,24 @@ require_once __DIR__ . '/character_db.php';
 <div class="md_transition"></div>
 <!--好感度DBここから-->
 <div class="fan-box">
-  <p>次の好感度まであと3回</p>
 
-
+<?php
+if($Favorability>=1 && $Favorability<=19){
+  echo "1";
+}elseif($Favorability>=20 && $Favorability<=39){
+  echo "2";
+}elseif($Favorability>=40 && $Favorability<=59){
+  echo "3";
+}elseif($Favorability>=60 && $Favorability<=79){
+  echo "4";
+}elseif($Favorability>=80 && $Favorability<=99){
+  echo "5";
+}elseif($Favorability>=100){
+  echo "MAX";
+}else{
+  echo "0";
+}
+?>
   <div style="background-color: #41A077; border-radius: 10px;">
     <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
 
