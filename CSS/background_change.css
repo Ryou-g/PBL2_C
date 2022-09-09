@@ -16,11 +16,12 @@ img.background_1{
 }
 img.background_2{
     position:relative;
-    margin-left: 8%;
+    margin-left: 3%;
     width: 30%;
     height:20%;
     vertical-align:center;
     background-size: contain;
+    margin-top: 5.5%;
     
 }
 div.background_2{
@@ -124,7 +125,7 @@ p{
     border: 1px solid ;
     border-color:rgb(204, 204, 204);
     border-radius: 7px;
-    margin-top: -1.5%;
+    margin-top: 6.5%;
     
     
     
@@ -136,6 +137,15 @@ p{
     
 }
 
-
+input{
+    width: 20vw;/* imgタグとwidth,heightの大きさを揃える */
+    height: 20vw;
+    display: grid;
+    background-color: #F9C80E;/*background-colorをしっかりと指定しないとinputタグが小さくなってしまいます*/
+    opacity: 0;/*inputタグは見えなくなるようにopacity:0;*/
+    position: absolute;
+    top:0;
+    z-index: 2;/*透明なボタンが画像より手前に来るようにz-indexを指定*/
+}
 
 /*背景一覧end*/

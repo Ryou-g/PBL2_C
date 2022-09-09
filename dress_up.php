@@ -21,77 +21,77 @@ require_once 'header.php';
 ?>
 </div>
 <div class="button001">
-	<a onclick="OnButtonClick();">着せ替える</a>
+	<a  onclick="OnButtonClick();">着せ替える</a>
 </div>
 
 <div class="container" >
-    <div class="grid-item"   onclick="changeImages1()"><p id="target_1">風呂メイド1</p>
+    <div class="grid-item"   onclick="changeImages1()"><p id="target1">風呂メイド1</p>
     <img src="./images/adult.png"  class="background_3"></div>
-    <div class="grid-item"  onclick="changeImages3()"><p id="target_2">風呂メイド3</p>
+    <div class="grid-item"  onclick="changeImages2()"><p id="target2">風呂メイド2</p>
+    <img src="./images/sexy.png"  class="background_3"></div>
+    <div class="grid-item"  onclick="changeImages3()"><p id="target3">風呂メイド3</p>
     <img src="./images/sick.png"  class="background_3"></div>
-    <div class="grid-item"   onclick="changeImages4()"><p id="target_3">風呂メイド4</p>
+    <div class="grid-item"   onclick="changeImages4()"><p id="target4">風呂メイド4</p>
     <img src="./images/neautral.png"  class="background_3"></div>
-    <a rel="http://buhidoh.net/?s">
+    
     
 </div>
 <script>
   /*  衣装切り替え*/ 
     var img;
-    
+    var i;
     function changeImages1(){
     img = document.getElementById("image");
     img.src = "./images/adult.png";
+    i=1;
     
-   
   }
 
-   /* function changeImages2(){
+    function changeImages2(){
     img = document.getElementById("image");
     img.src = "./images/sexy.png";
-    choice = 2;
-  }*/
+    i=2;
+  }
 
     function changeImages3(){
     img = document.getElementById("image");
     img.src = "./images/sick.png";
-  
+    i=3;
     
   }
 
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/neautral.png";
-    
+    i=4;
   }
 
   /*  衣装切り替えend*/ 
 
   /*衣装選択中の表示*/
   
-
+  var count=0;
+ 
 
   function OnButtonClick() {
-   
-    if ( image = "background_3"){
-      var target_1 = document.getElementById("target_1");
-      target_1.innerHTML = "風呂メイド1 セット中";
+      
+      var target = document.getElementById("target"+i);
+      target.innerHTML="セット中" 
+      count++;
+     
+        
+        if(count>1){
+         //  location.reload();
+          var target = document.getElementById("target"+i);
+          target.innerHTML="セット中" 
+          count=0;
+        
+      }
+      
     }
-    else if (image="background_3"){
-      var target_2 = document.getElementById("target_2");
-      target_2.innerHTML = "セット中";
-    }
-    else if(  image= "background_3"){
-      var target = document.getElementById("target_3");
-      target.innerHTML = "セット中";
-    }
-    else if(image="background_3"){
-      var target = document.getElementById("target_4");
-      target.innerHTML = "セット中";
-    }
+  
 
-    
-    
-   }
+  
 
    /*衣装選択中の表示end*/
 
