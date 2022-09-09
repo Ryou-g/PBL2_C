@@ -30,6 +30,7 @@ require_once 'header.php';
 
 <div class="container">
     <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png" class="background_3"></div>
     <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
     <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
     
