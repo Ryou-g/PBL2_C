@@ -6,6 +6,7 @@ FROM background JOIN users ON background_name=apply_background";
 
 $haikei = 0;
 
+
 if(isset($haikei)){
 
 }else{

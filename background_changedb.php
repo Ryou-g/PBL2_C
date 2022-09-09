@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/DBConnect.php';
 
+
 $haikei = $_POST['haikei'];
 echo $haikei;
 
