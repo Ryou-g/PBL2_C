@@ -67,7 +67,7 @@ if($Favorability>=1 && $Favorability<=19){
   $stmt_3 -> execute();
 }
 ?>
-  <div style="background-color: #41A077; border-radius: 10px;">
+  <div style="background-color: #41A077; border-radius: 10px;" class="fan-var">
     <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
 
   </div>

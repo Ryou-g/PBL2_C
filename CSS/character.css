@@ -57,11 +57,11 @@ img.icon {
 }
 
 /* 好感度バー */
-div.fan_var{
+div.fan-var{
   overflow: hidden;
 }
 
-div.fan_var > div.fan-var {
+div > div {
   transform: translateX(calc(-90% + var(--w)));
   width: 90%;
 }
