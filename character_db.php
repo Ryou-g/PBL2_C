@@ -32,7 +32,7 @@ foreach($logs as $log){
             $_SESSION['bathing_flag'] = 0;
             $Favorability += 5;
         }else{
-            $Favorability -= 10;
+            $Favorability -= 20;
         }
     }
     $now_day = $log['date'];
@@ -44,7 +44,7 @@ if($_SESSION['bathing_flag'] == 1){
     $_SESSION['bathing_flag'] = 0;
     $Favorability += 5;
 }else{
-    $Favorability -= 10;
+    $Favorability -= 20;
 }
 
 

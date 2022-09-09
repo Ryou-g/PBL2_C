@@ -59,6 +59,9 @@ if($Favorability>=1 && $Favorability<=19){
   echo "MAX";
 }else{
   echo "0";
+  $sql_3="UPDATE users SET Favorability = 0 WHERE id=1" ;
+  $stmt_2 = $pdo -> prepare($sql_3);
+  $stmt_2 -> execute();
 }
 ?>
   <div style="background-color: #41A077; border-radius: 10px;">
