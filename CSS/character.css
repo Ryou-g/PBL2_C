@@ -1,5 +1,5 @@
 /* 画面遷移アニメーション */
-div.md_transition {
+.md_transition {
 
   position: fixed;
   top: 0;
@@ -22,13 +22,13 @@ transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s;
   left: 0;
   top: -100%;
 }
-body.is_remove div.md_transition {
+body.is_remove .md_transition {
 
   -webkit-animation: maskCloseTransition .4s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
   animation: maskCloseTransition .1s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
 
 }
-body:not(.is_fade) div.md_transition {
+body:not(.is_fade) .md_transition {
   transform: translateY(-200%);
 }
 @-webkit-keyframes maskCloseTransition {
@@ -41,7 +41,7 @@ body:not(.is_fade) div.md_transition {
   to { transform: translate(0); }
 }
 
-a {
+a.twitter {
   position: relative;
   margin-left: 90%;
   z-index: 3;
@@ -57,11 +57,11 @@ img.icon {
 }
 
 /* 好感度バー */
-div {
+div.fan_var{
   overflow: hidden;
 }
 
-div > div {
+div.fan_var > div.fan-var {
   transform: translateX(calc(-90% + var(--w)));
   width: 100%;
 }
