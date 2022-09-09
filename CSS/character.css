@@ -1,5 +1,5 @@
 /* 画面遷移アニメーション */
-.md_transition {
+div.md_transition {
 
   position: fixed;
   top: 0;
@@ -22,13 +22,13 @@ transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s;
   left: 0;
   top: -100%;
 }
-body.is_remove .md_transition {
+body.is_remove div.md_transition {
 
   -webkit-animation: maskCloseTransition .4s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
   animation: maskCloseTransition .1s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
 
 }
-body:not(.is_fade) .md_transition {
+body:not(.is_fade) div.md_transition {
   transform: translateY(-200%);
 }
 @-webkit-keyframes maskCloseTransition {
@@ -40,13 +40,14 @@ body:not(.is_fade) .md_transition {
   0% { transform: translateY(200%); }
   to { transform: translate(0); }
 }
+
 a {
   position: relative;
   margin-left: 90%;
   z-index: 3;
   font-size: 130%;
-  font-weight: bold;
 }
+
 img.icon {
   position: fixed;
   margin-top: 1%;
