@@ -38,9 +38,9 @@ require_once __DIR__ . '/character_db.php';
 <?php
   require_once 'header.php';
 ?>
-
 </div>
 <div class="md_transition"></div>
+
 <!--好感度DBここから-->
 <div class="fan-box">
 
@@ -70,18 +70,17 @@ if($Favorability>=1 && $Favorability<=19){
   <div style="background-color: #41A077; border-radius: 10px;">
     <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
 
-
   </div>
 </div>
 <!--好感度DBここまで-->
 <!--Twitter共有ボタンここから-->
-<a href="https://twitter.com/intent/tweet?url=http://localhost/PBL2/character.php&text=わたしのおふろっちはこんな感じです。" target="blank_">
+<a  class="twitter" href="https://twitter.com/intent/tweet?url=http://localhost/PBL2/character.php&text=わたしのおふろっちはこんな感じです。" target="blank_">
   <img src="./icon/Twitter.png" class="icon">
 </a>
 <!--Twitter共有ボタンここまで-->
 <!--キャラクターDBここから-->
 <div class="moji-box">
-  <p>名前:<?php echo $val['user_name']; ?></p>
+  <p>名前: キャラの名前</p>
   <br>
   <p>年齢:22歳</p>
   <br>
@@ -90,6 +89,7 @@ if($Favorability>=1 && $Favorability<=19){
   <p>現在のお風呂：露天風呂</p>
 </div>
 <!--キャラクターDBここまで-->
+
 <div class="footer">
 <?php
   require_once 'footer.php';

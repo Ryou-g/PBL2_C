@@ -38,13 +38,15 @@ body
 .navi ul
 {
     display: flex;
+    justify-content: space-around;
     width: 100%;
 }
 
 .navi ul li
 {
     position: relative;
-    margin-right: 32%;
+    margin-right: 15%;
+    margin-left: 13%;
     list-style: none;
     width: 15vw;
     height: 10vh;
