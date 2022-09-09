@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/DBConnect.php';
 
-$Favorability = 0;
+$Favorability = 50;
 
-session_start();
+
 $sql = "select * from Bathing_log ORDER BY id DESC;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
@@ -30,9 +30,9 @@ foreach($logs as $log){
     if($diff->days >= 1){
         if($_SESSION['bathing_flag'] == 1){
             $_SESSION['bathing_flag'] = 0;
-            $Favorability += 10;
+            $Favorability += 5;
         }else{
-            $Favorability -= 10;
+            $Favorability -= 20;
         }
     }
     $now_day = $log['date'];
@@ -42,9 +42,9 @@ $i++;
 $now_day = substr($now_day, 0, 10);
 if($_SESSION['bathing_flag'] == 1){
     $_SESSION['bathing_flag'] = 0;
-    $Favorability += 10;
+    $Favorability += 5;
 }else{
-    $Favorability -= 10;
+    $Favorability -= 20;
 }
 
 
