@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/DBConnect.php';//DBへの接続
+require_once __DIR__ . '/background_set.php';
 
 $sql = "SELECT * FROM users WHERE id = id";
 $stmt = $pdo->prepare($sql);
@@ -32,7 +33,7 @@ setTimeout(fixLoad, 100);
 require_once __DIR__ . '/character_db.php';
 ?>
 
-<img src="./images/background.jpeg" class="background_1">
+<img src="<?php echo $path; ?>" class="background_1">
 <img src="./images/woman.png" class="background_2">
 <div class="header">
 <?php

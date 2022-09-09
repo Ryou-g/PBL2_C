@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/background_set.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -11,33 +15,45 @@
   
   <body>
   
-<img id ="image" src="./images/dressbuy_buckground.png" class="background_1">
-  <div class="background_2" >
-    <img id="target" src="./images/background.jpeg" class=background_2>
+  <img id ="image" src="<?php echo $path; ?>" class="background_1">
+<div class="background_2" >
+    <img id="target" src="<?php echo $path; ?>" class=background_2>
   </div>
   <div class="header">
   <?php 
 require_once 'header.php';
 ?>
 </div>
-<div class="button001">
-
-	<a onclick="OnButtonClick();">着せ替える</a>
-
-</div>
-
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><img src="./images/telmare.jpg" class="background3"></div>
-    <div class="grid-item" onclick="changeImages2()"><img src="./images/background.jpeg" class="background3"></div>
-    <div class="grid-item" onclick="changeImages3()"><img src="./images/japanese.jpg"  class="background3"></div>
-    <div class="grid-item" onclick="changeImages4()"><img src="./images/apart.jpg"  class="background3"></div>
+<form action="background_changedb.php" method="post"> 
+    <div class="grid-item" onclick="changeImages1()">
+    <input type="submit" name="haikei" value="1">
+    <img src="./images/telmare.jpg" class="background3"></div>
+</form>
+
+<form action="background_changedb.php" method="post"> 
+    <div class="grid-item" onclick="changeImages2()">
+    <input type="submit" name="haikei" value="2">
+    <img src="./images/background.jpeg" class="background3"></div>
+</form>
     
+<form action="background_changedb.php" method="post"> 
+    <div class="grid-item" onclick="changeImages3()">
+    <input type="submit" name="haikei" value="3">
+    <img src="./images/japanese.jpg"  class="background3"></div>
+</form>
+
+<form action="background_changedb.php" method="post"> 
+    <div class="grid-item" onclick="changeImages4()">
+    <input type="submit" name="haikei" value="4">
+    <img src="./images/apart.jpg"  class="background3"></div>
+</form>
+
 </div>
-<script>
+  <script>
     var img;
     function changeImages1(){
     img = document.getElementById("image");
-    img.src = "./images/telmare.jpg";
   }
 
     function changeImages2(){
@@ -53,33 +69,8 @@ require_once 'header.php';
     function changeImages4(){
     img = document.getElementById("image");
     img.src = "./images/apart.jpg";
-  }
-
-
-  function OnButtonClick() {
-   
-   if ( image = "background_3"){
-     var target_1 = document.getElementById("target_1");
-     target_1.innerHTML = " セット中";
-   }
-   else if (image="background_3"){
-     var target_2 = document.getElementById("target_2");
-     target_2.innerHTML = "セット中";
-   }
-   else if(  image= "background_3"){
-     var target = document.getElementById("target_3");
-     target.innerHTML = "セット中";
-   }
-   else if(image="background_3"){
-     var target = document.getElementById("target_4");
-     target.innerHTML = "セット中";
-   }
-
-   
-   
-  }
-</script>
-
+  } 
+  </script>
   </body>
   <?php 
 require_once 'footer.php';
