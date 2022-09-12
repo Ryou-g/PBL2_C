@@ -10,10 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
   
   <body>
-  
+  <?php
+  require_once __DIR__ . '/DBConnect.php';
+
+  $user_id = 1;
+  $sql = "select * FROM users WHERE id = :user_id";
+  $stmt = $pdo -> prepare($sql);
+  $stmt -> bindValue(':user_id', $user_id);
+  $stmt -> execute();
+  $user = $stmt -> fetch();
+  ?>
   <img src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
+    <?php if($user['apply_costume'] == 1){ ?>
     <img id="image" src="./images/adult.png" class=background_2>
+    <?php } ?>
+    <?php if($user['apply_costume'] == 2){ ?>
+    <img id="image" src="./images/sexy.png" class=background_2>
+    <?php } ?>
+    <?php if($user['apply_costume'] == 3){ ?>
+    <img id="image" src="./images/sick.png" class=background_2>
+    <?php } ?>
+    <?php if($user['apply_costume'] == 4){ ?>
+    <img id="image" src="./images/neautral.png" class=background_2>
+    <?php } ?>
+    
   </div>
   <div class="header">
   <?php 
