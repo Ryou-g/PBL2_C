@@ -47,15 +47,15 @@ require_once __DIR__ . '/character_db.php';
 
 <?php
 if($Favorability>=1 && $Favorability<=19){
-  echo "1";
+  echo "好感度：最悪";
 }elseif($Favorability>=20 && $Favorability<=39){
-  echo "2";
+  echo "好感度：悪い";
 }elseif($Favorability>=40 && $Favorability<=59){
-  echo "3";
+  echo "好感度：普通";
 }elseif($Favorability>=60 && $Favorability<=79){
-  echo "4";
+  echo "好感度：良い";
 }elseif($Favorability>=80 && $Favorability<=99){
-  echo "5";
+  echo "好感度：最高";
 }elseif($Favorability>=100){
   echo "MAX";
   $sql_3="UPDATE users SET Favorability =100 WHERE id=1" ;
