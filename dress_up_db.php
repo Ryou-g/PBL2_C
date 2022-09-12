@@ -22,7 +22,7 @@ $stmt -> bindvalue(':user_id', $user_id);
 $stmt -> execute();
 
 setcookie('setcos',$costume['id']);
-header("Location: /PBL2_C/dress_up_finish.php");
+header("Location: ./dress_up_finish.php");
 
 
 
