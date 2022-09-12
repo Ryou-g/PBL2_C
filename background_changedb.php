@@ -14,7 +14,7 @@ $stmt -> bindValue(':apply_background',$haikei,PDO::PARAM_STR);
 $stmt->execute();//sqlの実行
 
 echo $haikei;
-header('Location: background_change.php');
+header('Location: background_changed.php');
 exit;
 
 ?>
