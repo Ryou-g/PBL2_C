@@ -41,6 +41,51 @@ body:not(.is_fade) .md_transition {
   to { transform: translate(0); }
 }
 
+a.twitter {
+  position: relative;
+  margin-left: 90%;
+  z-index: 3;
+  font-size: 130%;
+}
+
+img.icon {
+  position: fixed;
+  margin-top: 1%;
+  width: 5%;
+  height: 8%;
+  z-index: 3;
+}
+
+/* 好感度バー */
+div.fan-var{
+  overflow: hidden;
+}
+
+div > div {
+  transform: translateX(calc(-90% + var(--w)));
+  width: 90%;
+}
+/* 好感度ボックス */
+.fan-box{
+  margin-left: 60%;
+  margin-top: -50%;
+  font-size: 130%;
+  font-weight: bold;
+}
+/* 文字ボックス */
+.moji-box{
+  margin-left: 15%;
+  margin-top: 1%;
+  line-height:300%;
+  font-size: 160%;
+  font-weight: bold;
+}
+/* 文字 */
+p {
+  position: absolute;
+  text-align:justify;
+  z-index: 3;
+}
 /** ヘッダーぐちゃぐちゃにならない用 */
 div.header{
   position: fixed;
@@ -68,6 +113,7 @@ img.background_1{
   vertical-align: top;
   background-size: contain;
   margin-top: 0%;
+  opacity: 0.3;
   z-index: 1;
 }
 /**立ち絵*/

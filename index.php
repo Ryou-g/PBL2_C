@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/background_set.php';
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -16,7 +19,7 @@ var fixLoad = function(){
 setTimeout(fixLoad, 100);
 </script>
 
-  <img src="./images/background.jpeg" class="background_1">
+  <img src="<?php echo $path; ?>" class="background_1">
   <img src="./images/woman.png" class="background_2">
   <div class="header">
   <?php

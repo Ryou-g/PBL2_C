@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/background_set.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +28,7 @@ var fixLoad = function(){
 setTimeout(fixLoad, 100);
 </script>
 
-  <img src="./images/background.jpeg" class="background_1">
+  <img src="<?php echo $path; ?>" class="background_1">
   <img src="./images/woman.png" class="background_2">
   <div class="header">
   <?php
@@ -34,7 +38,7 @@ require_once 'header.php';
 <div class="md_transition"></div>
         <table class="setting">
             <tr>
-                <td class="mojibox"><a href="./my_page.php" class="moji">マイページ</a></td>
+                <td class="mojibox"><a href="./my_page.php" class="moji">名前変更</a></td>
             </tr>
             <tr>
                 <td class="mojibox"><a href="./sound.php" class="moji">サウンド</a></td>
@@ -46,7 +50,7 @@ require_once 'header.php';
                 <td class="mojibox"><a href="./dress_up.php" class="moji">着せ替え</a></td>
             </tr>
             <tr>
-                <td class="mojibox"><a href="./establishment_detail/background_change.php" class="moji">背景を変える</a></td>
+                <td class="mojibox"><a href="./background_change.php" class="moji">背景を変える</a></td>
             </tr>
         </table>
     <div class="footer">

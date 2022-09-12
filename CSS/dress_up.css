@@ -45,7 +45,8 @@ div.footer{
 }
 
 /*着せ替えボタン*/
-div.button001 a{
+ 
+div.button001 {
     text-decoration: none;
     background: rgba(137, 236, 56, 0.849);
     border-color: black;
@@ -63,14 +64,15 @@ div.button001 a{
     transition: 0.1s ease-in-out;
     font-weight: 1000;
     font-family:'Fredoka One', cursive;
+    z-index: 10000000;
 }
-div.button001 a:hover {
+div.button001 :hover {
     background: #ffffff;
     color: rgb(0, 0, 0);
     border-color: black;
     border-width: 23px;
 }
-div.button001 a:after {
+div.button001 :after {
     border-top: 3px solid #313131;
     border-right: 3px solid #313131;
     transform: rotate(45deg) translateY(-50%);
@@ -80,18 +82,15 @@ div.button001 a:after {
     border-radius: 1px;
     transition: 0.3s ease-in-out;
 }
-div.button001 a:hover:after {
+div.button001 :hover:after {
     border-color: rgba(31, 30, 30, 0.555);
 }
-/*着せ替えend*/
+
+
+/*着せ替えボタンend*/
 
 /*衣装一覧*/
 
-.price{
-    margin-top: -0.1%;
-    font-size: 20px;
-    font-family: 'Comic Sans MS';
-}
 .container {
     float: right;
     width: 55%;
@@ -106,7 +105,7 @@ div.button001 a:hover:after {
 
 }
 
-.grid-item {
+.grid-item{
     background-color: rgba(255, 255, 255, 0.61);
     text-align: center;
     border: 1px solid ;
@@ -132,4 +131,3 @@ img.background_3{
 
 
 /*衣装一覧end*/
-

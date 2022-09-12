@@ -54,9 +54,11 @@ require_once 'header.php';
     <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png" class="background_3"></div>
     <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
     <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
+
     
 </div>
 <script>
+  /*  衣装切り替え*/ 
     var img;
     const hiddenField = document.getElementById('example');
     function changeImages1(){
@@ -83,6 +85,36 @@ require_once 'header.php';
     img.src = "./images/neautral.png";
     hiddenField.value = "./images/neautral.png";
   }
+
+  /*  衣装切り替えend*/ 
+
+  /*衣装選択中の表示*/
+  
+  var count=0;
+ 
+
+  function OnButtonClick() {
+      
+      var target = document.getElementById("target"+i);
+      target.innerHTML="セット中" 
+      count++;
+     
+        
+        if(count>1){
+         //  location.reload();
+          var target = document.getElementById("target"+i);
+          target.innerHTML="セット中" 
+          count=0;
+        
+      }
+      
+    }
+  
+
+  
+
+   /*衣装選択中の表示end*/
+
 </script>
 
   </body>

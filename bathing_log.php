@@ -1,37 +1,86 @@
- <!DOCTYPE html>
+<?php
+require_once __DIR__ . '/background_set.php';
+?>
+<!DOCTYPE html>
  <html lang="ja">
  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./CSS/bathing_log.css">
-    <title>log</title>
+    <title>入浴ログ</title>
 </head>
 
-<img src="./images/background.jpeg" class="background_1">
+<img src="<?php echo $path; ?>" class="background_1">
 <img src="./images/woman.png" class="background_2">
 
 <div class="header">
+
 <?php
-require_once "./header.php";
+require_once 'header.php';
+ ?>
+ </div>
+
+ <?php
+ require_once __DIR__ . '/bathing_log_db.php';
 ?>
-</div>
+
 <body>
+
+
+<div class="cp_ipselect">
+<form method='POST' action='bathing_log.php'>
+<select name="month" class="cp_sl06" style="text-align:center;"  required>
+<option value="月を選択して下さい" hidden disabled selected></option>
+<option value="all">全月</option>
+<option value="01">1月</option>
+<option value="02">2月</option>
+<option value="03">3月</option>
+<option value="04">4月</option>
+<option value="05">5月</option>
+<option value="06">6月</option>
+<option value="07">7月</option>
+<option value="08">8月</option>
+<option value="09">9月</option>
+<option value="10">10月</option>
+<option value="11">11月</option>
+<option value="12">12月</option>
+</select>
+<input type='submit' value='送信' />
+</form>
+<span class="cp_sl06_highlight" ></span>
+<span class="cp_sl06_selectbar"></span>
+<label class="cp_sl06_selectlabel"></label>
+</div>
+
 <table class="setting">
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/01<br>お風呂に入りました　19:05</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">お風呂から出ました　19:37</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/02<br>お風呂に入りませんでした　23:59</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">2022/06/03</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji"></td>
-            </tr>
-        </table>
+<?php
+/*
+$month = $_POST["month"];
+$target = date('2022-08-01');
+*/
+foreach($log_list as $bathlog){
+/*
+if ($month==='8') { 
+  */
+  ?>
+  <tr>
+  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
+  </tr>
+  <?php
+  /*
+  
+} else { 
+  */
+  ?>
+  <!-- <tr>
+  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
+  </tr> -->
+<?php
+/*
+  }
+  */
+}
+?>
+</table>
 </body>
 <div class="footer">
 <?php

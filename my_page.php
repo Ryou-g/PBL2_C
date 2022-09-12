@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/background_set.php';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,30 +11,25 @@
    <title>my_page</title>
 </head>
 <body>
-<img src="./images/background.jpeg" class="background_1">
+<img src="<?php echo $path; ?>" class="background_1">
 <img src="./images/woman.png" class="background_2">
 <div class="header">
 <?php
 require_once "./header.php";
 ?>
 </div>
-<table class="setting">
-            <tr>
-              <td class="mojibox"><class="moji">ニックネーム<br><br>ディエゴ</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">メールアドレス<br><br>abcd1234@gmail.com</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">パスワード<br>＊＊＊＊＊＊＊＊＊＊</td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji"></td>
-            </tr>
-            <tr>
-              <td class="mojibox"><class="moji">マイページ編集</td>
-            </tr>
-        </table>
+<form action="name_change.php" method="post">
+<h2>名前を入力してください。</h2>
+  <textarea name="name" cols="40" rows="3" placeholder="変更する名前を入力" required></textarea><br>
+  <button type="submit" name="button">変更する</button>
+</form>
+
+</main>
+</form>
+</div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <div class="footer">
   <?php
