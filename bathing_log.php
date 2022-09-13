@@ -45,9 +45,10 @@ require_once 'header.php';
 <option value="11">11月</option>
 <option value="12">12月</option>
 </select>
+<input class="search" type='submit' value='検索' />
 </form>
 </div>
-<input class="search" type='submit' value='検索' />
+
 <span class="cp_sl06_highlight" ></span>
 <span class="cp_sl06_selectbar"></span>
 <label class="cp_sl06_selectlabel"></label>
