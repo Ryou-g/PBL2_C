@@ -29,7 +29,8 @@ require_once 'header.php';
 <div class="cp_ipselect">
 <form method='POST' action='bathing_log.php'>
 <select name="month" class="cp_sl06" style="text-align:center;"  required>
-<option value="月を選択して下さい" hidden disabled selected></option>
+
+<option value="" hidden disabled selected>月を選択して下さい</option>
 <option value="all">全月</option>
 <option value="01">1月</option>
 <option value="02">2月</option>
@@ -44,12 +45,14 @@ require_once 'header.php';
 <option value="11">11月</option>
 <option value="12">12月</option>
 </select>
-<input type='submit' value='送信' />
+<input class="search" type='submit' value='検索' />
 </form>
+</div>
+
 <span class="cp_sl06_highlight" ></span>
 <span class="cp_sl06_selectbar"></span>
 <label class="cp_sl06_selectlabel"></label>
-</div>
+
 
 <table class="setting">
 <?php

@@ -72,6 +72,7 @@ require_once 'header.php';
     img = document.getElementById("image");
     img.src = "./images/sick.png";
     hiddenField.value = "./images/sick.png";
+  
   }
 
     function changeImages4(){
