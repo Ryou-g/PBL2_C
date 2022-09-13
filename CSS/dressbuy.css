@@ -140,12 +140,12 @@ p{
 .container {
     float: right;
     width: 55%;
-    height: 342px;
+    height: 30%;
     position:relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80% 80%;
-    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 48% 48%;
+    gap: 2%;
     margin-top:-37.5%;
     margin-right: 2%;
 
@@ -157,7 +157,6 @@ p{
     border: 1px solid ;
     border-color:rgb(124, 124, 121);
     border-radius: 7px;
-    margin-top: -1.5%;
 
 }
 .grid-item:hover{

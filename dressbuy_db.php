@@ -52,7 +52,7 @@ if($user['money'] < $costume['costume_price']){
     $stmt -> bindvalue(':money', $new_money);
     $stmt -> bindvalue(':user_id', $user_id);
     $result = $stmt -> execute();
-    
+
 }
 
 
@@ -67,5 +67,5 @@ if($buyflag == 0){
 $id =$costume['id'];
 setcookie('buyflag',$buyflag);
 setcookie('costume',$id);
-header("Location: /PBL2_C/dressbuy_finish.php");
+header("Location: ./dressbuy_finish.php");
 exit();
