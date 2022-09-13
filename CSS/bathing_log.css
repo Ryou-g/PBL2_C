@@ -25,7 +25,7 @@
   }
 
 .setting{
-    margin-top: -0.9%;
+    margin-top: 1%;
     border-collapse: collapse;
     border-spacing: 0;
     background-color: rgb(255, 255, 255, 0.589);
@@ -100,6 +100,7 @@ img.background_2{
 
 /*プルダウン*/
 .cp_ipselect {
+  
 	position: relative;
 	width: 20%;
 	margin-top: -48.5% ;
@@ -187,3 +188,45 @@ img.background_2{
 	opacity: 0.5;
 }
 /*プルダウンend*/
+
+/*送信ボタン*/
+.search{
+  display:inline-block;
+  text-decoration: none;
+  background: rgba(137, 236, 56, 0.849);
+  border-color: black;
+  border-width: 1px;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:-2.5%;
+  margin-left:30%;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.1s ease-in-out;
+  font-weight: 1000;
+  font-family:'Fredoka One', cursive;
+}
+.search:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: black;
+  border-width: 1px;
+}
+.search:after {
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+.search:hover:after {
+  border-color: rgba(31, 30, 30, 0.555);
+}
+/*ボタンend*/
