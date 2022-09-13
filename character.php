@@ -85,9 +85,30 @@ if($Favorability>=1 && $Favorability<=19){
   <br>
   <p>年齢:22歳</p>
   <br>
-  <p>現在の好感度：普通</p>
+  <p><?php
+  if($Favorability>=1 && $Favorability<=19){
+    echo "好感度：最悪";
+  }elseif($Favorability>=20 && $Favorability<=39){
+    echo "好感度：悪い";
+  }elseif($Favorability>=40 && $Favorability<=59){
+    echo "好感度：普通";
+  }elseif($Favorability>=60 && $Favorability<=79){
+    echo "好感度：良い";
+  }elseif($Favorability>=80 && $Favorability<=99){
+    echo "好感度：最高";
+  }elseif($Favorability>=100){
+    echo "MAX";
+    $sql_3="UPDATE users SET Favorability =100 WHERE id=1" ;
+    $stmt_2 = $pdo -> prepare($sql_3);
+    $stmt_2 -> execute();
+  }else{
+    echo "0";
+    $sql_4="UPDATE users SET Favorability = 0 WHERE id=1" ;
+    $stmt_3 = $pdo -> prepare($sql_4);
+    $stmt_3 -> execute();
+  }
+  ?></p>
   <br>
-  <p>現在のお風呂：露天風呂</p>
 </div>
 <!--キャラクターDBここまで-->
 
