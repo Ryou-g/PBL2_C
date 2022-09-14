@@ -15,19 +15,18 @@ img.background_1{
 
 }
 img.background_2{
-    position:relative;
+    position:absolute;
     margin-left: 15%;
     width: 40%;
     height:105%;
     vertical-align:center;
     background-size: contain;
-    z-index: 10000;
 
 }
 div.background_2{
-    position:relative;
+    position:absolute;
     width: 80%;
-    height:50%;
+    height:70%;
     vertical-align:center;
     background-size: contain;
     margin-top: -50%;
@@ -66,8 +65,8 @@ div.footer{
 
   .only-background {
     position: absolute;
-    font-size: 500%;
-    top: 50%;
+    font-size: 480%;
+    top: 30%;
     left:60%;
     font-family: 'Fredoka One', cursive;/*基本フォント*/
 
