@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>衣装着せ替え画面</title>
   </head>
-  <link rel="stylesheet" href="./CSS/dressbuy.css">
+  <link rel="stylesheet" href="./CSS/dress_up.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-  
+
   <body>
   <?php
   require_once __DIR__ . '/DBConnect.php';
@@ -34,10 +34,10 @@
     <?php if($user['apply_costume'] == 4){ ?>
     <img id="image" src="./images/neautral.png" class=background_2>
     <?php } ?>
-    
+
   </div>
   <div class="header">
-  <?php 
+  <?php
 require_once 'header.php';
 ?>
 </div>
@@ -55,10 +55,10 @@ require_once 'header.php';
     <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
     <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
 
-    
+
 </div>
 <script>
-  /*  衣装切り替え*/ 
+  /*  衣装切り替え*/
     var img;
     const hiddenField = document.getElementById('example');
     function changeImages1(){
@@ -86,39 +86,39 @@ require_once 'header.php';
     hiddenField.value = "./images/neautral.png";
   }
 
-  /*  衣装切り替えend*/ 
+  /*  衣装切り替えend*/
 
   /*衣装選択中の表示*/
-  
+
   var count=0;
- 
+
 
   function OnButtonClick() {
-      
+
       var target = document.getElementById("target"+i);
-      target.innerHTML="セット中" 
+      target.innerHTML="セット中"
       count++;
-     
-        
+
+
         if(count>1){
          //  location.reload();
           var target = document.getElementById("target"+i);
-          target.innerHTML="セット中" 
+          target.innerHTML="セット中"
           count=0;
-        
-      }
-      
-    }
-  
 
-  
+      }
+
+    }
+
+
+
 
    /*衣装選択中の表示end*/
 
 </script>
 
   </body>
-  <?php 
+  <?php
 require_once 'footer.php';
 ?>
 </html>
