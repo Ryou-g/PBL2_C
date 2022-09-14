@@ -13,7 +13,7 @@ require_once __DIR__ . '/dressbuy_finish_db.php';
 <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 
   <body>
-  
+
   <img src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
     <?php
@@ -40,7 +40,7 @@ require_once __DIR__ . '/dressbuy_finish_db.php';
     ?>
   </div>
   <div class="header">
-<?php 
+<?php
 require_once 'header.php';
 ?>
 </div>
@@ -48,12 +48,12 @@ require_once 'header.php';
   <?php
   if($buyflag == 1){
   ?>
-  <a div class="only-background">購入エラー 残高を確認してください</div></a> 
+  <a div class="only-background">購入エラー 残高を確認してください</div></a>
   <?php
   }
   else if($buyflag == 2){
   ?>
-  <a div class="only-background">購入エラー 既に購入された衣装です</div></a> 
+  <a div class="only-background">購入エラー 既に購入された衣装です</div></a>
   <?php
   }
   else{
@@ -61,11 +61,11 @@ require_once 'header.php';
   <a div class="only-background">GET !!</div></a>
   <?php
   }
-  ?> 
+  ?>
 
 </div>
   </body>
-  <?php 
+  <?php
 require_once 'footer.php';
 ?>
 </html>
