@@ -57,6 +57,9 @@ if(!empty($logs)){
         $now_day = $log['date'];
         $i++;
     }
+    if($log['status_number'] == 1 && $log['button_censor'] == 1){
+        $_SESSION['bathing_flag'] = 1;
+    }
     $i++;
     $now_day = substr($now_day, 0, 10);
     if($_SESSION['bathing_flag'] == 1){
