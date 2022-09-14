@@ -10,7 +10,7 @@ require_once __DIR__ . '/background_set.php';
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/name_change.css">
-   <title>my_page</title>
+   <title>name_change</title>
 </head>
 <body>
 <img src="<?php echo $path; ?>" class="background_1">
