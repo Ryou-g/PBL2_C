@@ -10,12 +10,12 @@
   </head>
   <body>
   <div class="header">
-  <?php 
+  <?php
 require_once 'header.php';
 ?>
 </div>
 <div class="md_transition"></div>
-  <div>  
+  <div>
   <img src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
     <?php
@@ -41,18 +41,14 @@ require_once 'header.php';
     }
     ?>
   </div>
-  
-  
-  <div  class="fadeup">
-  
-      <div class="only-background">着せ替え完了！</div>
-        
-  </div>
-  
-  
+
+
+      <a div class="only-background">着せ替え<br>完了！</div><a>
+
+
   </div>
   </body>
-  <?php 
+  <?php
 require_once 'footer.php';
 ?>
 </html>
