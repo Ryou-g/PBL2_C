@@ -81,7 +81,7 @@ body
   /*ホバーエフェクト*/
   .navi ul li:hover {
     /*ちょっと浮かせる*/
-    transform: translateY(-20%);
+    transform: translateY(-15%);
   }
 
 /*
