@@ -35,7 +35,6 @@ require_once 'header.php';
 <div class="md_transition"></div>
 
 <div class="button001">
-	<!-- <a href="dressbuy_finish.php">購入する</a> -->
   <form method="POST" name="form1" action="dressbuy_db.php">
     <input type="hidden" name="example" id="example-id">
     <a href="javascript:form1.submit()">購入する</a>
@@ -72,7 +71,7 @@ require_once 'header.php';
     img = document.getElementById("image");
     img.src = "./images/sick.png";
     hiddenField.value = "./images/sick.png";
-  
+
   }
 
     function changeImages4(){
