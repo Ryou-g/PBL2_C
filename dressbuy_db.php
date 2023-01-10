@@ -3,12 +3,13 @@ require_once __DIR__ . '/DBConnect.php';
 
 $user_id = 1; //ログイン機能実装後、セッションから代入する
 $costume_path = $_POST['example'];
+echo "costume_path = " . $costume_path;
 
 $buyflag = 0; //これが0なら購入可能
 
 //値がからの時はデフォルトで指定されているsexyを入れる
 if(empty($costume_path) == true){
-    $costume_path = "./images/sexy.png";
+    $costume_path = "./images/coat1.png";
 }
 
 
@@ -18,6 +19,7 @@ $stmt = $pdo -> prepare($sql);
 $stmt -> bindvalue(':costume_path', $costume_path);
 $stmt->execute();
 $costume = $stmt -> fetch();
+var_dump($costume);
 
 
 //userからユーザー情報取得

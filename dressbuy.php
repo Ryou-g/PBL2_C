@@ -23,9 +23,11 @@ var fixLoad = function(){
 setTimeout(fixLoad, 100);
 </script>
 
-  <img src="./images/dressbuy_buckground.png" class="background_1">
+  <img src="./images/pop1.jpg" class="background_1">
   <div class="background_2" >
-    <img id="image" src="./images/sexy.png" class=background_2>
+    <!-- <img id="image" src="./images/sexy.png" class=background_2> -->
+    <img id="image" src="./images/coat1.png" class=background_2>
+
   </div>
   <div class="header">
   <?php
@@ -43,41 +45,41 @@ require_once 'header.php';
 </div>
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png"  class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/coat1.png" class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/dress1.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/maid1.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/uniform1.png"  class="background_3"><p class="price">￥120</p></div>
 
 </div>
 <script>
     var img;
     // まず隠しフィールド要素を取得
     const hiddenField = document.getElementById('example-id');
-    hiddenField = "./images/sexy.png";
+    hiddenField = "./images/coat1.png";
     function changeImages1(){
     img = document.getElementById("image");
-    img.src = "./images/adult.png";
+    img.src = "./images/coat1.png";
     // 値をセット
-    hiddenField.value = "./images/adult.png";
+    hiddenField.value = "./images/coat1.png";
   }
 
     function changeImages2(){
     img = document.getElementById("image");
-    img.src = "./images/sexy.png";
-    hiddenField.value = "./images/sexy.png";
+    img.src = "./images/dress1.png";
+    hiddenField.value = "./images/dress1.png";
   }
 
     function changeImages3(){
     img = document.getElementById("image");
-    img.src = "./images/sick.png";
-    hiddenField.value = "./images/sick.png";
+    img.src = "./images/maid1.png";
+    hiddenField.value = "./images/maid1.png";
 
   }
 
     function changeImages4(){
     img = document.getElementById("image");
-    img.src = "./images/neautral.png";
-    hiddenField.value = "./images/neautral.png";
+    img.src = "./images/uniform1.png";
+    hiddenField.value = "./images/uniform1.png";
   }
 </script>
 
