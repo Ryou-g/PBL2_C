@@ -14,27 +14,27 @@ require_once __DIR__ . '/dressbuy_finish_db.php';
 
   <body>
 
-  <img src="./images/dressbuy_buckground.png" class="background_1">
+  <img src="./images/pop1.jpg" class="background_1">
   <div class="background_2" >
     <?php
     if($buyflag == 0 && $costume == 1){
     ?>
-    <img id="image" src="./images/adult.png" class=background_2>
+    <img id="image" src="./images/coat1.png" class=background_2>
     <?php
     }
     if($buyflag == 0 && $costume == 2){
     ?>
-    <img id="image" src="./images/sexy.png" class=background_2>
+    <img id="image" src="./images/dress1.png" class=background_2>
     <?php
     }
     if($buyflag == 0 && $costume == 3){
     ?>
-    <img id="image" src="./images/sick.png" class=background_2>
+    <img id="image" src="./images/maid1.png" class=background_2>
     <?php
     }
     if($buyflag == 0 && $costume == 4){
     ?>
-    <img id="image" src="./images/neautral.png" class=background_2>
+    <img id="image" src="./images/uniform1.png" class=background_2>
     <?php
     }
     ?>
