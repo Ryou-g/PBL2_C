@@ -23,7 +23,7 @@
   <img src="./images/dressbuy_buckground.png" class="background_1">
   <div class="background_2" >
     <?php if($user['apply_costume'] == 1){ ?>
-    <img id="image" src="./images/adult.png" class=background_2>
+    <img id="image" src="./images/uniform2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 2){ ?>
     <img id="image" src="./images/sexy.png" class=background_2>
@@ -50,10 +50,10 @@ require_once 'header.php';
 
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/coat1.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/dress2.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/maid2.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/uniform2.png"  class="background_3"></div>
 
 
 </div>
