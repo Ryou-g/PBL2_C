@@ -20,19 +20,19 @@
   $stmt -> execute();
   $user = $stmt -> fetch();
   ?>
-  <img src="./images/dressbuy_buckground.png" class="background_1">
+  <img src="./images/pop1.jpg" class="background_1">
   <div class="background_2" >
     <?php if($user['apply_costume'] == 1){ ?>
-    <img id="image" src="./images/uniform2.png" class=background_2>
+    <img id="image" src="./images/coat2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 2){ ?>
-    <img id="image" src="./images/sexy.png" class=background_2>
+    <img id="image" src="./images/dress2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 3){ ?>
-    <img id="image" src="./images/sick.png" class=background_2>
+    <img id="image" src="./images/maid2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 4){ ?>
-    <img id="image" src="./images/neautral.png" class=background_2>
+    <img id="image" src="./images/uniform2.png" class=background_2>
     <?php } ?>
 
   </div>
@@ -63,27 +63,27 @@ require_once 'header.php';
     const hiddenField = document.getElementById('example');
     function changeImages1(){
     img = document.getElementById("image");
-    img.src = "./images/adult.png";
+    img.src = "./images/coat2.png";
     // 値をセット
-    hiddenField.value = "./images/adult.png";
+    hiddenField.value = "./images/coat2.png";
   }
 
     function changeImages2(){
     img = document.getElementById("image");
-    img.src = "./images/sexy.png";
-    hiddenField.value = "./images/sexy.png";
+    img.src = "./images/dress2.png";
+    hiddenField.value = "./images/dress2.png";
   }
 
     function changeImages3(){
     img = document.getElementById("image");
-    img.src = "./images/sick.png";
-    hiddenField.value = "./images/sick.png";
+    img.src = "./images/maid2.png";
+    hiddenField.value = "./images/maid2.png";
   }
 
     function changeImages4(){
     img = document.getElementById("image");
-    img.src = "./images/neautral.png";
-    hiddenField.value = "./images/neautral.png";
+    img.src = "./images/uniform2.png";
+    hiddenField.value = "./images/uniform2.png";
   }
 
   /*  衣装切り替えend*/

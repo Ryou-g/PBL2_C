@@ -16,27 +16,27 @@ require_once 'header.php';
 </div>
 <div class="md_transition"></div>
   <div>
-  <img src="./images/pop1.png" class="background_1">
+  <img src="./images/pop1.jpg" class="background_1">
   <div class="background_2" >
     <?php
     $setcos = $_COOKIE['setcos'];
     if($setcos == 1){
     ?>
-    <img id="image" src="./images/coat1.png" class=background_2>
+    <img id="image" src="./images/coat2.png" class=background_2>
     <?php
     }
     elseif($setcos == 2){
     ?>
-    <img id="image" src="./images/uniform1.png" class=background_2>
+    <img id="image" src="./images/dress2.png" class=background_2>
     <?php
     }
     elseif($setcos == 3){
     ?>
-    <img id="image" src="./images/uniform1.png" class=background_2>
+    <img id="image" src="./images/maid2.png" class=background_2>
     <?php
     }elseif($setcos == 4){
     ?>
-    <img id="image" src="./images/uniform1.png" class=background_2>
+    <img id="image" src="./images/uniform2.png" class=background_2>
     <?php
     }
     ?>
