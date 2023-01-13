@@ -10,7 +10,7 @@ require_once __DIR__ . '/background_set.php';
 <link rel="stylesheet" href="./CSS/sound.css">
 <body>
   <img src="<?php echo $path; ?>" class="background_1">
-  <img src="./images/woman.png" class="background_2">
+  <img src="images/coat_usually.png" class="background_2">
   <div class="header">
     <?php
       require_once "./header.php";
