@@ -146,11 +146,10 @@ p{
     grid-template-columns: 50% 50%;
     grid-template-rows: 48% 48%;
     gap: 2%;
-    margin-top:-37.5%;
+    margin-top:-38.5%;
     margin-right: 2%;
 
 }
-
 .grid-item {
     background-color: rgba(255, 255, 255, 0.61);
     text-align: center;

@@ -50,10 +50,10 @@ require_once 'header.php';
 
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/coat1.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/dress2.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/maid2.png"  class="background_3"></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/uniform2.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages1()"><p>コート</p><img src="./images/coat1.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages2()"><p>ワンピース</p><img src="./images/dress2.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages3()"><p>メイド</p><img src="./images/maid2.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages4()"><p>制服</p><img src="./images/uniform2.png"  class="background_3"></div>
 
 
 </div>

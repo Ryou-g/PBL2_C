@@ -6,7 +6,7 @@ div.name_chenge{
     font-weight: bold;
     opacity: 0.8;
   }
-  
+
   /** ヘッダーぐちゃぐちゃにならない用 */
   div.header{
     position: fixed;
@@ -39,11 +39,11 @@ div.name_chenge{
   /**立ち絵*/
   img.background_2{
     position:relative;
-    width: 45%;
-    height: auto;
+    width: 30%;
+    height: 30%;
     vertical-align: top;
     background-size: contain;
-    margin-left:60%;
-    margin-top: -45%;
+    margin-left:65%;
+    margin-top: -50%;
     z-index:    2;
   }
