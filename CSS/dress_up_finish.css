@@ -1,6 +1,6 @@
 body{
-    margin:0px;
-    margin-bottom:0px;
+    margin:0%;
+    margin-bottom:0%;
     padding:0%;
     overflow: hidden;
 }
@@ -11,25 +11,24 @@ img.background_1{
     vertical-align: top;
     background-size: contain;
     position:relative;
- 
+    margin-top: 0px;
 }
 
 img.background_2{
     position:relative;
-    margin-left: 8%;
-    width: 30%;
-    height:20%;
+    margin-left: 15%;
+    width: 40%;
+    height:105%;
     vertical-align:center;
     background-size: contain;
 }
 
 div.background_2{
-    position:relative;
+    position:absolute;
     width: 80%;
-    height:50%;
+    height:70%;
     vertical-align:center;
     background-size: contain;
-    margin-left: 8%;
     margin-top: -50%;
 }
 
@@ -39,50 +38,33 @@ div.header{
         width: 100%;
         height: 16%;
         z-index:1000;
-        padding-bottom:10px;
+        padding-bottom:10%;
 }
 
 div.footer{
     z-index:100000;/*前面に表示*/
 }
 
-/*着せ替え完了*/
-.fadeup {
-    animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-  }
-   
-  @keyframes fadeup {
-    0% {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-
+/* 着せ替え完了 */
   .only-background {
     position: absolute;
-    font-size: 550%;
-    bottom: 200px;
-    left:50%;
+    font-size: 500%;
+    top: 50%;
+    left:60%;
     font-family: 'Fredoka One', cursive;/*基本フォント*/
-    
+
     color:rgb(102, 94, 94);
     padding:0;
-    margin: 1px; 
+    margin: 1px;
     padding: 16px;
     color: rgb(41, 20, 20);
     transition: background 1s;
     transition: all 0.5s 0s ease;
 
-    
+
   }
   /*着せ替え完了end*/
 
- 
+  a {
+    text-decoration:none;
+}

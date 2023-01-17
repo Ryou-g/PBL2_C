@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>衣装着せ替え画面</title>
   </head>
-  <link rel="stylesheet" href="./CSS/dressbuy.css">
+  <link rel="stylesheet" href="./CSS/dress_up.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-  
+
   <body>
   <?php
   require_once __DIR__ . '/DBConnect.php';
@@ -20,24 +20,24 @@
   $stmt -> execute();
   $user = $stmt -> fetch();
   ?>
-  <img src="./images/dressbuy_buckground.png" class="background_1">
+  <img src="./images/pop1.jpg" class="background_1">
   <div class="background_2" >
     <?php if($user['apply_costume'] == 1){ ?>
-    <img id="image" src="./images/adult.png" class=background_2>
+    <img id="image" src="./images/coat2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 2){ ?>
-    <img id="image" src="./images/sexy.png" class=background_2>
+    <img id="image" src="./images/dress2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 3){ ?>
-    <img id="image" src="./images/sick.png" class=background_2>
+    <img id="image" src="./images/maid2.png" class=background_2>
     <?php } ?>
     <?php if($user['apply_costume'] == 4){ ?>
-    <img id="image" src="./images/neautral.png" class=background_2>
+    <img id="image" src="./images/uniform2.png" class=background_2>
     <?php } ?>
-    
+
   </div>
   <div class="header">
-  <?php 
+  <?php
 require_once 'header.php';
 ?>
 </div>
@@ -50,75 +50,75 @@ require_once 'header.php';
 
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/adult.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/sexy.png" class="background_3"></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/sick.png"  class="background_3"></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/neautral.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/coat1.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/dress2.png" class="background_3"></div>
+    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/maid2.png"  class="background_3"></div>
+    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/uniform2.png"  class="background_3"></div>
 
-    
+
 </div>
 <script>
-  /*  衣装切り替え*/ 
+  /*  衣装切り替え*/
     var img;
     const hiddenField = document.getElementById('example');
     function changeImages1(){
     img = document.getElementById("image");
-    img.src = "./images/adult.png";
+    img.src = "./images/coat2.png";
     // 値をセット
-    hiddenField.value = "./images/adult.png";
+    hiddenField.value = "./images/coat2.png";
   }
 
     function changeImages2(){
     img = document.getElementById("image");
-    img.src = "./images/sexy.png";
-    hiddenField.value = "./images/sexy.png";
+    img.src = "./images/dress2.png";
+    hiddenField.value = "./images/dress2.png";
   }
 
     function changeImages3(){
     img = document.getElementById("image");
-    img.src = "./images/sick.png";
-    hiddenField.value = "./images/sick.png";
+    img.src = "./images/maid2.png";
+    hiddenField.value = "./images/maid2.png";
   }
 
     function changeImages4(){
     img = document.getElementById("image");
-    img.src = "./images/neautral.png";
-    hiddenField.value = "./images/neautral.png";
+    img.src = "./images/uniform2.png";
+    hiddenField.value = "./images/uniform2.png";
   }
 
-  /*  衣装切り替えend*/ 
+  /*  衣装切り替えend*/
 
   /*衣装選択中の表示*/
-  
+
   var count=0;
- 
+
 
   function OnButtonClick() {
-      
+
       var target = document.getElementById("target"+i);
-      target.innerHTML="セット中" 
+      target.innerHTML="セット中"
       count++;
-     
-        
+
+
         if(count>1){
          //  location.reload();
           var target = document.getElementById("target"+i);
-          target.innerHTML="セット中" 
+          target.innerHTML="セット中"
           count=0;
-        
-      }
-      
-    }
-  
 
-  
+      }
+
+    }
+
+
+
 
    /*衣装選択中の表示end*/
 
 </script>
 
   </body>
-  <?php 
+  <?php
 require_once 'footer.php';
 ?>
 </html>

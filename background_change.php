@@ -28,25 +28,25 @@ require_once 'header.php';
 <form action="background_changedb.php" method="post"> 
     <div class="grid-item" onclick="changeImages1()">
     <input type="submit" name="haikei" value="1">
-    <img src="./images/telmare.jpg" class="background3"></div>
+    <img src="./images/daiyokujo_pc.png" class="background3"></div>
 </form>
 
 <form action="background_changedb.php" method="post"> 
     <div class="grid-item" onclick="changeImages2()">
     <input type="submit" name="haikei" value="2">
-    <img src="./images/background.jpeg" class="background3"></div>
+    <img src="./images/roten_pc.png" class="background3"></div>
 </form>
     
 <form action="background_changedb.php" method="post"> 
     <div class="grid-item" onclick="changeImages3()">
     <input type="submit" name="haikei" value="3">
-    <img src="./images/japanese.jpg"  class="background3"></div>
+    <img src="./images/wafu_pc.png"  class="background3"></div>
 </form>
 
 <form action="background_changedb.php" method="post"> 
     <div class="grid-item" onclick="changeImages4()">
     <input type="submit" name="haikei" value="4">
-    <img src="./images/apart.jpg"  class="background3"></div>
+    <img src="./images/huro_pc.png"  class="background3"></div>
 </form>
 
 </div>

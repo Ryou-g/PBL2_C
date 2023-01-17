@@ -10,7 +10,7 @@ require_once __DIR__ . '/background_set.php';
 </head>
 
 <img src="<?php echo $path; ?>" class="background_1">
-<img src="./images/woman.png" class="background_2">
+<img src="images/coat_usually.png" class="background_2">
 
 <div class="header">
 
@@ -56,31 +56,20 @@ require_once 'header.php';
 
 <table class="setting">
 <?php
-/*
-$month = $_POST["month"];
-$target = date('2022-08-01');
-*/
-foreach($log_list as $bathlog){
-/*
-if ($month==='8') { 
-  */
+if($log_list != "error"){
+  foreach($log_list as $bathlog){
+?>
+    <tr>
+    <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
+    </tr>
+  <?php
+  }
+}else{
   ?>
   <tr>
-  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
+  <td class="mojibox"><class="moji"><p>データが存在しません</p><br></td>
   </tr>
   <?php
-  /*
-  
-} else { 
-  */
-  ?>
-  <!-- <tr>
-  <td class="mojibox"><class="moji"><?php echo $bathlog['date']?><br><?php echo $bathlog['status'] ?></td>
-  </tr> -->
-<?php
-/*
-  }
-  */
 }
 ?>
 </table>
