@@ -81,3 +81,24 @@ img.background_2{
     margin-top: -45%;
     z-index:    2;
 }
+img.background_3{
+    position:relative;
+    width: 25%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-left:48%;
+    margin-top: -49%;
+    z-index:    2;
+}
+p{
+    position:relative;
+    width: 20%;
+    height: auto;
+    vertical-align: top;
+    background-size: contain;
+    margin-left:50%;
+    margin-top: -46%;
+    z-index:    2;
+    font-size: 20px;
+}

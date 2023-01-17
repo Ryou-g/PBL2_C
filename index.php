@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/background_set.php';
-require_once __DIR__ . '/charSetDB.php';
+require_once __DIR__ . '/setQuotedb.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -22,6 +23,8 @@ setTimeout(fixLoad, 100);
 
   <img src="<?php echo $path; ?>" class="background_1">
   <img src="<?php echo $cos_path?>" class="background_2">
+  <img src = "./images/out1.png" class="background_3">
+  <p><?php echo $quote; ?></p>
   <div class="header">
   <?php
 require_once 'header.php';
