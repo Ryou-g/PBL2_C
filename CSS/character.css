@@ -17,7 +17,7 @@ transition: transform 1.5s cubic-bezier(.39, .575, .565, 1) 0.1s;
   content: "";
   display: block;
   width: 100%;
-  height: 300%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: -100%;
@@ -43,16 +43,16 @@ body:not(.is_fade) .md_transition {
 
 a.twitter {
   position: relative;
-  margin-left: 90%;
+  margin-left: 80%;
   z-index: 3;
   font-size: 130%;
 }
 
 img.icon {
   position: fixed;
-  margin-top: 1%;
-  width: 5%;
-  height: 8%;
+  margin-top: 3%;
+  width: 6%;
+  height: 10%;
   z-index: 3;
 }
 
@@ -67,24 +67,25 @@ div > div {
 }
 /* 好感度ボックス */
 .fan-box{
-  margin-left: 60%;
+  margin-left: 45%;
   margin-top: -50%;
   font-size: 130%;
   font-weight: bold;
+  
 }
 /* 文字ボックス */
 .moji-box{
   margin-left: 15%;
   margin-top: 1%;
   line-height:300%;
-  font-size: 160%;
+  font-size: 200%;
   font-weight: bold;
 }
 /* 文字 */
 p {
   position: absolute;
   text-align:justify;
-  z-index: 3;
+  z-index: 400;
 }
 /** ヘッダーぐちゃぐちゃにならない用 */
 div.header{
@@ -113,7 +114,7 @@ img.background_1{
   vertical-align: top;
   background-size: contain;
   margin-top: 0%;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: 1;
 }
 /**立ち絵*/
@@ -123,7 +124,7 @@ img.background_2{
   height: auto;
   vertical-align: top;
   background-size: contain;
-  margin-left:50%;
-  margin-top: -45%;
+  margin-left:45%;
+  margin-top: -40%;
   z-index:    2;
 }
