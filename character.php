@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/DBConnect.php';//DBへの接続
 require_once __DIR__ . '/background_set.php';
+require_once __DIR__ . '/charSetDB.php';
 
 $sql = "SELECT * FROM users WHERE id = id";
 $stmt = $pdo->prepare($sql);
@@ -34,7 +35,7 @@ require_once __DIR__ . '/character_db.php';
 ?>
 
 <img src="<?php echo $path; ?>" class="background_1">
-<img src="images/coat_usually.png" class="background_2">
+<img src="<?php echo $cos_path?>" class="background_2">
 <div class="header">
 <?php
   require_once 'header.php';
