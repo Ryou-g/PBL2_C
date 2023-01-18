@@ -87,7 +87,7 @@ img.background_3{
     height: auto;
     vertical-align: top;
     background-size: contain;
-    margin-left:48%;
+    margin-left:25%;
     margin-top: -49%;
     z-index:    2;
 }
@@ -97,7 +97,7 @@ p{
     height: auto;
     vertical-align: top;
     background-size: contain;
-    margin-left:50%;
+    margin-left:28%;
     margin-top: -46%;
     z-index:    2;
     font-size: 20px;
