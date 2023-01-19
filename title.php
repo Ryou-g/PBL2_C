@@ -14,8 +14,8 @@ require_once __DIR__ . '/sound_db.php';
 
 ?>
 <div class="md_transition"></div>
-  <div class="rogo" >おふろっち</div> <!-- ここは後々画像になります -->
-  <img src="./images/background.jpeg" class="background_1">
+  <img class="rogo" src="./images/ohurocchi_logo.png"> <!-- ここは後々画像になります -->
+  <img src="./images/roten_pc.png" class="background_1">
   <!--<img src="./images/woman.png" class="background_2">--->
 
   <div  class="fadeup">

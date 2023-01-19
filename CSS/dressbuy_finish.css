@@ -66,9 +66,9 @@ div.footer{
   .only-background {
     position: absolute;
     font-size: 480%;
-    top: 30%;
-    left:60%;
-    font-family: 'Fredoka One', cursive;/*基本フォント*/
+    top: 40%;
+    left:18%;
+    font-family: 'Kosugi Maru', cursive;/*基本フォント*/
 
     color:rgb(102, 94, 94);
     padding:0;

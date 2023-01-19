@@ -1,8 +1,9 @@
 div.name_chenge p{
+    width: 50%;
     text-align: center;
     margin-top: 25%;
-    margin-left: 5%;
-    font-size: 160%;
+    margin-left: 10%;
+    font-size: 330%;
     font-weight: bold;
     background-color: azure;
     color:magenta;

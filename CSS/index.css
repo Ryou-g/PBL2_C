@@ -73,12 +73,12 @@ img.background_1{
 /**立ち絵*/
 img.background_2{
     position:relative;
-    width: 30%;
+    width: 25%;
     height: 30%;
     vertical-align: top;
     background-size: contain;
     margin-left:50%;
-    margin-top: -47.5%;
+    margin-top: -45.5%;
     z-index:    2;
 }
 img.background_3{

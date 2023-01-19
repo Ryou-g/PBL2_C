@@ -26,25 +26,25 @@
 
 /* 好感度バー */
 .fan-var_2{
-    margin-left:20%;
-    
+    margin-left:15%;
+
     width: 60%;
 }
 div {
     overflow: hidden;
-   
+
   }
-  
+
   div > div {
     transform: translateX(calc(-90% + var(--w)));
     width: 90%;
   }
-  
+
   /* 好感度ボックス */
   .fan-box_2{
     margin-left: 0%;
     text-align: center;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
   }

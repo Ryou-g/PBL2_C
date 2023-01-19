@@ -45,9 +45,6 @@ require_once 'header.php';
                 <td class="mojibox"><a href="./my_page.php" class="moji">名前変更</a></td>
             </tr>
             <tr>
-                <td class="mojibox"><a href="./sound.php" class="moji">サウンド</a></td>
-            </tr>
-            <tr>
                 <td class="mojibox"><a href="./bathing_log.php" class="moji">入浴ログ</a></td>
             </tr>
             <tr>
