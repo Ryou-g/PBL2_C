@@ -59,16 +59,25 @@ img.icon {
 /* 好感度バー */
 div.fan-var{
   overflow: hidden;
+  background-color: #41A077;
+  border-radius: 10px;
+}
+
+div.fan-var2{
+  background-color: #61EDB0;
+  border-radius: 10px;
+  height:10px;
 }
 
 div > div {
   transform: translateX(calc(-200% + var(--w)));
-  width: 200%;
+  width: 100%;
 }
 /* 好感度ボックス */
 .fan-box{
-  margin-left: 60%;
-  margin-top: -50%;
+  width: 50%;
+  margin-left:55%;
+  margin-top: -49%;
   font-size: 130%;
   font-weight: bold;
 }

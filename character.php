@@ -3,7 +3,6 @@
 require_once __DIR__ . '/DBConnect.php';//DBへの接続
 require_once __DIR__ . '/background_set.php';
 require_once __DIR__ . '/charSetDB.php';
-require_once __DIR__ . '/setQuotedb.php';
 
 $sql = "SELECT * FROM users WHERE id = id";
 $stmt = $pdo->prepare($sql);
@@ -48,30 +47,30 @@ require_once __DIR__ . '/character_db.php';
 <div class="fan-box">
 
 <?php
-if($Favorability>=1 && $Favorability<=19){
+if($val['Favorability']>=1 && $val['Favorability']<=19){
   echo "好感度：最悪";
-}elseif($Favorability>=20 && $Favorability<=49){
+}elseif($val['Favorability']>=20 && $val['Favorability']<=49){
   echo "好感度：悪い";
-}elseif($Favorability>=50 && $Favorability<=99){
+}elseif($val['Favorability']>=50 && $val['Favorability']<=99){
   echo "好感度：普通";
-}elseif($Favorability>=100 && $Favorability<=149){
+}elseif($val['Favorability']>=100 && $val['Favorability']<=149){
   echo "好感度：良い";
-}elseif($Favorability>=150 && $Favorability<=199){
+}elseif($val['Favorability']>=150 && $val['Favorability']<=199){
   echo "好感度：最高";
-}elseif($Favorability>=200){
-  echo "MAX";
-  $sql_3="UPDATE users SET Favorability =100 WHERE id=1" ;
+}elseif($val['Favorability']>=200){
+  echo "好感度：MAX";
+  $sql_3="UPDATE users SET Favorability =200 WHERE id=1" ;
   $stmt_2 = $pdo -> prepare($sql_3);
   $stmt_2 -> execute();
 }else{
-  echo "0";
+  echo "好感度：0";
   $sql_4="UPDATE users SET Favorability = 0 WHERE id=1" ;
   $stmt_3 = $pdo -> prepare($sql_4);
   $stmt_3 -> execute();
 }
 ?>
-  <div style="background-color: #41A077; border-radius: 10px;" class="fan-var">
-    <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $Favorability ?>%;"></div>
+  <div class="fan-var">
+    <div style = "--w:<?php echo $val['Favorability'] ?>%;" class="fan-var2"></div>
 
   </div>
 </div>
@@ -83,28 +82,28 @@ if($Favorability>=1 && $Favorability<=19){
 <!--Twitter共有ボタンここまで-->
 <!--キャラクターDBここから-->
 <div class="moji-box">
-  <p>名前: キャラの名前</p>
+  <p>名前: <?php echo $val['user_name']; ?></p>
   <br>
   <p>年齢:22歳</p>
   <br>
   <p><?php
-  if($Favorability>=1 && $Favorability<=19){
+  if($val['Favorability']>=1 && $val['Favorability']<=19){
     echo "好感度：最悪";
-  }elseif($Favorability>=20 && $Favorability<=49){
+  }elseif($val['Favorability']>=20 && $val['Favorability']<=49){
     echo "好感度：悪い";
-  }elseif($Favorability>=50 && $Favorability<=99){
+  }elseif($val['Favorability']>=50 && $val['Favorability']<=99){
     echo "好感度：普通";
-  }elseif($Favorability>=100 && $Favorability<=149){
+  }elseif($val['Favorability']>=100 && $val['Favorability']<=149){
     echo "好感度：良い";
-  }elseif($Favorability>=150 && $Favorability<=199){
+  }elseif($val['Favorability']>=150 && $val['Favorability']<=199){
     echo "好感度：最高";
-  }elseif($Favorability>=200){
-    echo "MAX";
+  }elseif($val['Favorability']>=200){
+    echo "好感度：MAX";
     $sql_3="UPDATE users SET Favorability =200 WHERE id=1" ;
     $stmt_2 = $pdo -> prepare($sql_3);
     $stmt_2 -> execute();
   }else{
-    echo "0";
+    echo "好感度：0";
     $sql_4="UPDATE users SET Favorability = 0 WHERE id=1" ;
     $stmt_3 = $pdo -> prepare($sql_4);
     $stmt_3 -> execute();
