@@ -1,9 +1,11 @@
-div.name_chenge{
+div.name_chenge p{
     text-align: center;
     margin-top: 25%;
     margin-left: 5%;
     font-size: 160%;
     font-weight: bold;
+    background-color: azure;
+    color:magenta;
     opacity: 0.8;
   }
 

@@ -3,6 +3,7 @@
 require_once __DIR__ . '/DBConnect.php';//DBへの接続
 require_once __DIR__ . '/background_set.php';
 require_once __DIR__ . '/charSetDB.php';
+require_once __DIR__ . '/setQuotedb.php';
 
 $sql = "SELECT * FROM users WHERE id = id";
 $stmt = $pdo->prepare($sql);
@@ -49,15 +50,15 @@ require_once __DIR__ . '/character_db.php';
 <?php
 if($Favorability>=1 && $Favorability<=19){
   echo "好感度：最悪";
-}elseif($Favorability>=20 && $Favorability<=39){
+}elseif($Favorability>=20 && $Favorability<=49){
   echo "好感度：悪い";
-}elseif($Favorability>=40 && $Favorability<=59){
+}elseif($Favorability>=50 && $Favorability<=99){
   echo "好感度：普通";
-}elseif($Favorability>=60 && $Favorability<=79){
+}elseif($Favorability>=100 && $Favorability<=149){
   echo "好感度：良い";
-}elseif($Favorability>=80 && $Favorability<=99){
+}elseif($Favorability>=150 && $Favorability<=199){
   echo "好感度：最高";
-}elseif($Favorability>=100){
+}elseif($Favorability>=200){
   echo "MAX";
   $sql_3="UPDATE users SET Favorability =100 WHERE id=1" ;
   $stmt_2 = $pdo -> prepare($sql_3);
@@ -89,17 +90,17 @@ if($Favorability>=1 && $Favorability<=19){
   <p><?php
   if($Favorability>=1 && $Favorability<=19){
     echo "好感度：最悪";
-  }elseif($Favorability>=20 && $Favorability<=39){
+  }elseif($Favorability>=20 && $Favorability<=49){
     echo "好感度：悪い";
-  }elseif($Favorability>=40 && $Favorability<=59){
+  }elseif($Favorability>=50 && $Favorability<=99){
     echo "好感度：普通";
-  }elseif($Favorability>=60 && $Favorability<=79){
+  }elseif($Favorability>=100 && $Favorability<=149){
     echo "好感度：良い";
-  }elseif($Favorability>=80 && $Favorability<=99){
+  }elseif($Favorability>=150 && $Favorability<=199){
     echo "好感度：最高";
-  }elseif($Favorability>=100){
+  }elseif($Favorability>=200){
     echo "MAX";
-    $sql_3="UPDATE users SET Favorability =100 WHERE id=1" ;
+    $sql_3="UPDATE users SET Favorability =200 WHERE id=1" ;
     $stmt_2 = $pdo -> prepare($sql_3);
     $stmt_2 -> execute();
   }else{

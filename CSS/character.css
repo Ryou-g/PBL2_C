@@ -62,8 +62,8 @@ div.fan-var{
 }
 
 div > div {
-  transform: translateX(calc(-90% + var(--w)));
-  width: 90%;
+  transform: translateX(calc(-200% + var(--w)));
+  width: 200%;
 }
 /* 好感度ボックス */
 .fan-box{

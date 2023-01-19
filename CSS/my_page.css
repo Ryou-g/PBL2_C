@@ -79,11 +79,11 @@ img.background_1{
 /**立ち絵*/
 img.background_2{
   position:relative;
-  width: 45%;
-  height: auto;
+  width: 25%;
+  height: 25%;
   vertical-align: top;
   background-size: contain;
-  margin-left:50%;
+  margin-left:60%;
   margin-top: -45%;
   z-index:    2;
 }

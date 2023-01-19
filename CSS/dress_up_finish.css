@@ -25,11 +25,11 @@ img.background_2{
 
 div.background_2{
     position:absolute;
-    width: 80%;
-    height:70%;
+    width: 110%;
+    height:80%;
     vertical-align:center;
     background-size: contain;
-    margin-top: -50%;
+    margin-top: -55%;
 }
 
 div.header{
