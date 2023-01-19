@@ -50,6 +50,7 @@
     margin-bottom:10%;
     margin-left: 120px;
     width: 10%;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 .moji{
 
@@ -100,7 +101,7 @@ img.background_2{
 
 /*プルダウン*/
 .cp_ipselect {
-
+  font-family: 'Kosugi Maru', sans-serif;
 	position: relative;
 	width: 20%;
 	margin-top: -49.5% ;
@@ -191,7 +192,7 @@ img.background_2{
 
 /*送信ボタン*/
 .search{
-
+  font-family: 'Kosugi Maru', sans-serif;
   display:inline-block;
   text-decoration: none;
   background: rgba(137, 236, 56, 0.849);
@@ -205,10 +206,10 @@ img.background_2{
   margin-left:70%;
   max-width: 280px;
   padding: 10px 25px;
-  color: #313131;
+  color:black;
   transition: 0.1s ease-in-out;
   font-weight: 1000;
-  font-family:'Fredoka One', cursive;
+ 
 }
 .search:hover {
   background: #ffffff;

@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 
   <body class="is_fade" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 <?php
 session_start();
 ?>
@@ -39,16 +42,16 @@ require_once 'header.php';
 <div class="button001">
   <form method="POST" name="form1" action="dressbuy_db.php">
     <input type="hidden" name="example" id="example-id">
-    <a href="javascript:form1.submit()">購入する</a>
+    <a href="javascript:form1.submit()">交換する</a>
   </form>
 
 </div>
 
 <div class="container">
-    <div class="grid-item" onclick="changeImages1()"><p>風呂メイド1</p><img src="./images/coat1.png" class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages2()"><p>風呂メイド2</p><img src="./images/dress1.png"  class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages3()"><p>風呂メイド3</p><img src="./images/maid1.png"  class="background_3"><p class="price">￥120</p></div>
-    <div class="grid-item" onclick="changeImages4()"><p>風呂メイド4</p><img src="./images/uniform1.png"  class="background_3"><p class="price">￥120</p></div>
+    <div class="grid-item" onclick="changeImages1()"><p>コート</p><img src="./images/coat1.png" class="background_3"><p class="price">50pt</p></div>
+    <div class="grid-item" onclick="changeImages2()"><p>ワンピース</p><img src="./images/dress1.png"  class="background_3"><p class="price">100pt</p></div>
+    <div class="grid-item" onclick="changeImages3()"><p>メイド</p><img src="./images/maid1.png"  class="background_3"><p class="price">150pt</p></div>
+    <div class="grid-item" onclick="changeImages4()"><p>制服</p><img src="./images/uniform1.png"  class="background_3"><p class="price">200pt</p></div>
 
 </div>
 <script>

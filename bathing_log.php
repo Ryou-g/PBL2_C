@@ -7,6 +7,9 @@ require_once __DIR__ . '/charSetDB.php';
  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./CSS/bathing_log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <title>入浴ログ</title>
 </head>
 

@@ -3,14 +3,17 @@
 }
 .nitiji{
     position: absolute;
-    margin-top:-3.5%;
+    margin-top:-2.5%;
     margin-left: 82.5%;
     font-size: 200%;
+    font-family: 'Kosugi maru' ,cursive;
 }
 .rogo{
     margin-left: 3%;
     font-size :200%;
+    font-family: 'Kosugi maru' ,cursive;
 }
+
 .haikei{
     opacity: 0.3;
 }
@@ -23,7 +26,7 @@
 
 /* 好感度バー */
 .fan-var_2{
-    margin-left:10%;
+    margin-left:15%;
 
     width: 60%;
 }
@@ -41,6 +44,7 @@ div {
   .fan-box_2{
     margin-left: 0%;
     text-align: center;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
   }

@@ -10,8 +10,7 @@ require_once __DIR__ . '/dressbuy_finish_db.php';
   <link rel="stylesheet" href="./CSS/dressbuy_finish.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <body>
 
   <img src="./images/pop1.jpg" class="background_1">
@@ -48,12 +47,12 @@ require_once 'header.php';
   <?php
   if($buyflag == 1){
   ?>
-  <a div class="only-background">購入エラー 残高を確認してください</div></a>
+  <a div class="only-background">残高を確認してください</div></a>
   <?php
   }
   else if($buyflag == 2){
   ?>
-  <a div class="only-background">購入エラー 既に購入された衣装です</div></a>
+  <a div class="only-background">既に購入された衣装です</div></a>
   <?php
   }
   else{

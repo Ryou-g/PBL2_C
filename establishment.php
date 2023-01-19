@@ -10,6 +10,9 @@ require_once __DIR__ . '/charSetDB.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/establishment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <title>設定画面</title>
 </head>
 <body>
@@ -40,9 +43,6 @@ require_once 'header.php';
         <table class="setting">
             <tr>
                 <td class="mojibox"><a href="./my_page.php" class="moji">名前変更</a></td>
-            </tr>
-            <tr>
-                <td class="mojibox"><a href="./sound.php" class="moji">サウンド</a></td>
             </tr>
             <tr>
                 <td class="mojibox"><a href="./bathing_log.php" class="moji">入浴ログ</a></td>
