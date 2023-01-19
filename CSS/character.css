@@ -71,6 +71,7 @@ div > div {
   margin-top: -45%;
   font-size: 130%;
   font-weight: bold;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 /* 文字ボックス */
 .moji-box{
@@ -80,6 +81,7 @@ div > div {
   width: 30%;
   font-size: 190%;
   font-weight: bold;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 /* 文字 */
 p {

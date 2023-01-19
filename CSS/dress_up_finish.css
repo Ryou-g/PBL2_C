@@ -25,11 +25,12 @@ img.background_2{
 
 div.background_2{
     position:absolute;
-    width: 110%;
-    height:80%;
+    width: 150%;
+    height:68%;
     vertical-align:center;
     background-size: contain;
-    margin-top: -55%;
+    margin-left:-20%;
+    margin-top: -50%;
 }
 
 div.header{
@@ -50,8 +51,8 @@ div.footer{
     position: absolute;
     font-size: 500%;
     top: 50%;
-    left:60%;
-    font-family: 'Fredoka One', cursive;/*基本フォント*/
+    left:50%;
+    font-family: 'Kosugi maru', cursive;/*基本フォント*/
 
     color:rgb(102, 94, 94);
     padding:0;

@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="./CSS/dress_up_finish.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lilita+One&family=Londrina+Outline&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <head>
     <meta charset="UTF-8">
     <title>衣装着せ替え完了画面</title>
@@ -44,7 +44,7 @@ require_once 'header.php';
   </div>
 
 
-      <a div class="only-background">着せ替え<br>完了！</div><a>
+      <a div class="only-background">着せ替え完了！</div><a>
 
 
   </div>

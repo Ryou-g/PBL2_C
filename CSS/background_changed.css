@@ -7,6 +7,7 @@ div.name_chenge p{
     background-color: azure;
     color:magenta;
     opacity: 0.8;
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
   /** ヘッダーぐちゃぐちゃにならない用 */

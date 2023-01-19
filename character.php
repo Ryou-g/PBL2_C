@@ -20,6 +20,9 @@ foreach($name as $val){
 <title>キャラクター画面</title>
 </head>
 <link rel="stylesheet" href="./CSS/character.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 <body class="is_fade" >
 
     <!-- JS -->

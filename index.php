@@ -9,7 +9,12 @@ require_once __DIR__ . '/setQuotedb.php';
     <meta charset="UTF-8">
     <title>ホーム画面</title>
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/index.css">
+
+  
   <body class="is_fade" >
 
     <!-- JS -->
