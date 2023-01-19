@@ -59,9 +59,10 @@ img.background_1{
 }
 img.background_2{
     position:relative;
+    margin-top: 5%;
     margin-left: 8%;
-    width: 35%;
-    height:23%;
+    width: 30%;
+    height:20%;
     vertical-align:center;
     background-size: contain;
 
@@ -100,12 +101,13 @@ div.footer{
     align-items: center;
     margin-top:0.1%;
     margin-left:8%;
-    max-width: 280px;
+    width: 20%;
     padding: 10px 25px;
     color: #313131;
     transition: 0.1s ease-in-out;
     font-weight: 1000;
-    font-family:'Fredoka One', cursive;
+    font-family: 'Kosugi Maru', sans-serif;
+
 }
 .button001 a:hover {
     background: #ffffff;
@@ -130,12 +132,14 @@ div.footer{
 
 /*衣装一覧*/
 p{
-    font-size: 20px;
+    font-size: 150%;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: 500;
 }
 .price{
     margin-top: -0.1%;
     font-size: 20px;
-    font-family: 'Comic Sans MS';
+    font-family: 'Kosugi Maru', sans-serif;
 }
 .container {
     float: right;
@@ -146,7 +150,7 @@ p{
     grid-template-columns: 50% 50%;
     grid-template-rows: 48% 48%;
     gap: 2%;
-    margin-top:-38.5%;
+    margin-top:-35.5%;
     margin-right: 2%;
 
 }

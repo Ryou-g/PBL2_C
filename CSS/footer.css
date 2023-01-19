@@ -26,7 +26,7 @@ body
     bottom: 0;
     width: 100vw;
     height: 12vh;
-    background: rgba(255, 255, 255, 0.774);
+    background: rgba(255, 255, 255, 0.589);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ body
     font-size: 350%;
     text-align: center;
     transition: 0.5s;
-    color: rgb(21, 183, 237);
+    color:rgb(54, 54, 54);
 }
   /*ホバーエフェクト*/
   .navi ul li:hover {
