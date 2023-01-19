@@ -30,7 +30,7 @@ div.background_2{
     height:50%;
     vertical-align:center;
     background-size: contain;
-    margin-top: -50%;
+    margin-top: -47%;
 }
 img.background3 {
     width: 100%;
@@ -114,7 +114,7 @@ p{
     grid-template-rows: 180px 100px 180px 120px;
     gap: 20px;
     margin-left: 2.5%;
-   
+    margin-top: 5%;
 
 }
 
