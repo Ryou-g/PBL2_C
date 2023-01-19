@@ -49,29 +49,7 @@ require_once __DIR__ . '/character_db.php';
 <!--好感度DBここから-->
 <div class="fan-box">
 
-<?php
-if($val['Favorability']>=1 && $val['Favorability']<=19){
-  echo "好感度：最悪";
-}elseif($val['Favorability']>=20 && $val['Favorability']<=49){
-  echo "好感度：悪い";
-}elseif($val['Favorability']>=50 && $val['Favorability']<=99){
-  echo "好感度：普通";
-}elseif($val['Favorability']>=100 && $val['Favorability']<=149){
-  echo "好感度：良い";
-}elseif($val['Favorability']>=150 && $val['Favorability']<=199){
-  echo "好感度：最高";
-}elseif($val['Favorability']>=200){
-  echo "好感度：MAX";
-  $sql_3="UPDATE users SET Favorability =200 WHERE id=1" ;
-  $stmt_2 = $pdo -> prepare($sql_3);
-  $stmt_2 -> execute();
-}else{
-  echo "好感度：0";
-  $sql_4="UPDATE users SET Favorability = 0 WHERE id=1" ;
-  $stmt_3 = $pdo -> prepare($sql_4);
-  $stmt_3 -> execute();
-}
-?>
+
   <div class="fan-var">
     <div style = "--w:<?php echo $val['Favorability'] ?>%;" class="fan-var2"></div>
 

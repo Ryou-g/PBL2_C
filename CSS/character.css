@@ -64,12 +64,16 @@ div.fan-var{
   z-index: 100000;
 }
 
-div.fan-var2{
+/* div.fan-var2{
   background-color: #61EDB0;
   border-radius: 10px;
   height:10px;
+
   z-index: 100000;
 }
+=======
+} */
+
 
 div > div {
   transform: translateX(calc(-200% + var(--w)));
@@ -139,6 +143,9 @@ img.background_2{
   vertical-align: top;
   background-size: contain;
   margin-left:55%;
+
   margin-top: -40%;
+
+  
   z-index:    2;
 }

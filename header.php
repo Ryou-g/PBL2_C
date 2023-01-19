@@ -25,8 +25,8 @@ require_once __DIR__ . '/character_db.php';
           <div class="fan-var_2">
             <div class="fan-box_2">好感度</div>
               <div style="background-color: #41A077; border-radius: 10px;">
-                <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $val['Favorability'] ?>%;"></div>
-
+                <!-- <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $val['Favorability'] ?>%;"></div> -->
+                <div style="background-color: #61EDB0; border-radius: 10px; height:10px; width : <?php echo $val['Favorability'] / 2 ?>%"></div>
             </div>
           </div>
         </div>
