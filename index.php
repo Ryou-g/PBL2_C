@@ -2,6 +2,7 @@
 require_once __DIR__ . '/background_set.php';
 require_once __DIR__ . '/setQuotedb.php';
 
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,7 +15,7 @@ require_once __DIR__ . '/setQuotedb.php';
 <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/index.css">
 
-  
+
   <body class="is_fade" >
 
     <!-- JS -->
@@ -32,7 +33,7 @@ setTimeout(fixLoad, 100);
   <p><?php echo $quote; ?></p>
   <div class="header">
   <?php
-require_once 'header.php';
+require_once './header.php';
 ?>
 </div>
   <div class="md_transition"></div>

@@ -6,7 +6,7 @@ require_once __DIR__ . '/charSetDB.php';
 
 date_default_timezone_set('Asia/Tokyo');
 
-$sql = "SELECT * FROM users WHERE id = 1";
+$sql = "SELECT * FROM Users WHERE id = 1";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch();

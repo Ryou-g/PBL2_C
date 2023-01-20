@@ -28,7 +28,7 @@ require_once __DIR__ . '/DBConnect.php';
 
 $name = $_POST['name'];
 
-$sql = "UPDATE users SET user_name = :user_name";
+$sql = "UPDATE Users SET user_name = :user_name";
 
 $stmt = $pdo->prepare($sql);//sql実行準備
 

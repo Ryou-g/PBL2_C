@@ -52,7 +52,7 @@ if(!empty($logs)){
     }
 
 
-    $sql_1 = "UPDATE users set Favorability=:Favorability WHERE id = 1";
+    $sql_1 = "UPDATE Users set Favorability=:Favorability WHERE id = 1";
     $stmt_1 = $pdo -> prepare($sql_1);
     $stmt_1 -> bindValue(':Favorability', $Favorability);
     $stmt_1 -> execute();

@@ -17,7 +17,7 @@
   require_once __DIR__ . '/DBConnect.php';
 
   $user_id = 1;
-  $sql = "select * FROM users WHERE id = :user_id";
+  $sql = "select * FROM Users WHERE id = :user_id";
   $stmt = $pdo -> prepare($sql);
   $stmt -> bindValue(':user_id', $user_id);
   $stmt -> execute();

@@ -4,7 +4,7 @@ require_once __DIR__ . '/DBConnect.php';//DBへの接続
 require_once __DIR__ . '/background_set.php';
 require_once __DIR__ . '/charSetDB.php';
 
-$sql = "SELECT * FROM users WHERE id = id";
+$sql = "SELECT * FROM Users WHERE id = id";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $name = $stmt->fetchAll();

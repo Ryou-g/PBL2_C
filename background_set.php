@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/DBConnect.php';
 
-$sql ="SELECT users.apply_background AS background_name, background.background_path FROM users JOIN background ON background.background_name=users.apply_background";
+$sql ="SELECT Users.apply_background AS background_name, Background.background_path FROM Users JOIN Background ON Background.background_name=Users.apply_background";
 
 $haikei = 0;
 

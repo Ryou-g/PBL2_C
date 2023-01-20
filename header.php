@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/DBConnect.php';//DBへの接続
 
-$sql = "SELECT * FROM users WHERE id = id";
+$sql = "SELECT * FROM Users WHERE id = id";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $name = $stmt->fetchAll();
@@ -23,7 +23,7 @@ require_once __DIR__ . '/character_db.php';
         <div class="flex">
         <nobr class="rogo"><?php echo $val['user_name']; ?></nobr>
           <div class="fan-var_2">
-            <div class="fan-box_2">好感度</div>
+            <div class="fan-box_2">好感度：<?php echo $val['Favorability'] ?>Pt</div>
               <div style="background-color: #41A077; border-radius: 10px;">
                 <!-- <div style="background-color: #61EDB0; border-radius: 10px; height:10px; --w:<?php echo $val['Favorability'] ?>%;"></div> -->
                 <div style="background-color: #61EDB0; border-radius: 10px; height:10px; width : <?php echo $val['Favorability'] / 2 ?>%"></div>

@@ -6,7 +6,7 @@ require_once __DIR__ . '/DBConnect.php';
 $user_id = 1; //ログイン機能を実装したらセッションから入れる
 
 //そのユーザの適応中衣装を取得
-$sql = 'select * from users where id = 1';
+$sql = 'select * from Users where id = 1';
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch();

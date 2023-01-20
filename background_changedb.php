@@ -5,7 +5,7 @@ require_once __DIR__ . '/DBConnect.php';
 $haikei = $_POST['haikei'];
 echo $haikei;
 
-$sql = "UPDATE users SET apply_background = :apply_background";
+$sql = "UPDATE Users SET apply_background = :apply_background";
 
 $stmt = $pdo->prepare($sql);//sql実行準備
 
